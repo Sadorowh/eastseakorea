@@ -210,136 +210,140 @@
             padding: 0 !important;
         }
     </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
     <link rel="stylesheet" id="cff-css" href="../wp-content/plugins/custom-facebook-feed/css/cff-style_ver-2.3.10.css"
-		type="text/css" media="all">
+        type="text/css" media="all">
 
-	<link rel="stylesheet" id="cff-font-awesome-css" href="font-awesome/4.2.0/css/font-awesome.min_ver-4.2.0.css"
-		type="text/css" media="all">
-
-
-	<link rel="stylesheet" id="wp-block-library-css" href="../wp-includes/css/dist/block-library/style.min.css.css"
-		type="text/css" media="all"> 
-
-	<link rel="stylesheet" id="cff-css" href="../wp-content/plugins/custom-facebook-feed/css/cff-style_ver-2.9.1.css"
-		type="text/css" media="all">
-
-	<link rel="stylesheet" id="sb-font-awesome-css" href="/font-awesome/4.2.0/css/font-awesome.min_ver-5.1.19.css"
-		type="text/css" media="all">
+    <link rel="stylesheet" id="cff-font-awesome-css" href="font-awesome/4.2.0/css/font-awesome.min_ver-4.2.0.css"
+        type="text/css" media="all">
 
 
+    <link rel="stylesheet" id="wp-block-library-css" href="../wp-includes/css/dist/block-library/style.min.css.css"
+        type="text/css" media="all">
 
-	<link rel="stylesheet" id="rs-plugin-settings-css"
-		href="../wp-content/plugins/revslider/public/assets/css/settings_ver-5.0.8.5.css" type="text/css" media="all" />
-	<style id="rs-plugin-settings-inline-css" type="text/css">
-		#rs-demo-id {}
-	</style>
-	<link rel="stylesheet" id="bootstrap-css" href="../wp-content/themes/kleo/assets/css/bootstrap.min_ver-3.0.9.css"
-		type="text/css" media="all" />
-	<link rel="stylesheet" id="kleo-app-css" href="../wp-content/themes/kleo/assets/css/app.min_ver-3.0.9.css"
-		type="text/css" media="all" />
-	<link rel="stylesheet" id="magnific-popup-css"
-		href="../wp-content/themes/kleo/assets/js/plugins/magnific-popup/magnific_ver-3.0.9.css" type="text/css"
-		media="all" />
-	<link rel="stylesheet" id="kleo-fonts-css" href="../wp-content/themes/kleo/assets/css/fontello_ver-3.0.9.css"
-		type="text/css" media="all" />
-	<link rel="stylesheet" id="mediaelement-css"
-		href="../wp-includes/js/mediaelement/mediaelementplayer.min_ver-2.22.0.css" type="text/css" media="all" />
-	<link rel="stylesheet" id="kleo-google-fonts-css"
-		href="//fonts.googleapis.com/css?family=Roboto+Condensed%3A300%7COpen+Sans%3A400&amp;ver=4.7.6" type="text/css"
-		media="all" />
-	<link rel="stylesheet" id="kleo-colors-css" href="../wp-content/uploads/custom_styles/dynamic_ver-3.0.9.css"
-		type="text/css" media="all" />
-	<link rel="stylesheet" id="js_composer_front-css"
-		href="../wp-content/plugins/js_composer/assets/css/js_composer_ver-4.7.1.1.css" type="text/css" media="all" />
-	<link rel="stylesheet" id="kleo-plugins-css" href="../wp-content/themes/kleo/assets/css/plugins.min_ver-3.0.9.css"
-		type="text/css" media="all" />
-	<link rel="stylesheet" id="kleo-style-css" href="../wp-content/themes/kleo-child/style_ver-3.0.9.css" type="text/css"
-		media="all" />
+    <link rel="stylesheet" id="cff-css" href="../wp-content/plugins/custom-facebook-feed/css/cff-style_ver-2.9.1.css"
+        type="text/css" media="all">
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const carousel = document.querySelector(".kleo-carousel");
-			const items = document.querySelectorAll(".kleo-carousel li");
-			const prevBtn = document.querySelector(".carousel-prev");
-			const nextBtn = document.querySelector(".carousel-next");
+    <link rel="stylesheet" id="sb-font-awesome-css" href="/font-awesome/4.2.0/css/font-awesome.min_ver-5.1.19.css"
+        type="text/css" media="all">
 
-			const visibleItems = 3;
-			const itemWidth = items[0].offsetWidth;
 
-			// Clone last N items to start
-			for (let i = items.length - visibleItems; i < items.length; i++) {
-				const clone = items[i].cloneNode(true);
-				carousel.insertBefore(clone, carousel.firstChild);
-			}
 
-			// Clone first N items to end
-			for (let i = 0; i < visibleItems; i++) {
-				const clone = items[i].cloneNode(true);
-				carousel.appendChild(clone);
-			}
+    <link rel="stylesheet" id="rs-plugin-settings-css"
+        href="../wp-content/plugins/revslider/public/assets/css/settings_ver-5.0.8.5.css" type="text/css" media="all" />
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+    <link rel="stylesheet" id="bootstrap-css" href="../wp-content/themes/kleo/assets/css/bootstrap.min_ver-3.0.9.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" id="kleo-app-css" href="../wp-content/themes/kleo/assets/css/app.min_ver-3.0.9.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" id="magnific-popup-css"
+        href="../wp-content/themes/kleo/assets/js/plugins/magnific-popup/magnific_ver-3.0.9.css" type="text/css"
+        media="all" />
+    <link rel="stylesheet" id="kleo-fonts-css" href="../wp-content/themes/kleo/assets/css/fontello_ver-3.0.9.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" id="mediaelement-css"
+        href="../wp-includes/js/mediaelement/mediaelementplayer.min_ver-2.22.0.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="kleo-google-fonts-css"
+        href="//fonts.googleapis.com/css?family=Roboto+Condensed%3A300%7COpen+Sans%3A400&amp;ver=4.7.6" type="text/css"
+        media="all" />
+    <link rel="stylesheet" id="kleo-colors-css" href="../wp-content/uploads/custom_styles/dynamic_ver-3.0.9.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" id="js_composer_front-css"
+        href="../wp-content/plugins/js_composer/assets/css/js_composer_ver-4.7.1.1.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="kleo-plugins-css" href="../wp-content/themes/kleo/assets/css/plugins.min_ver-3.0.9.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" id="kleo-style-css" href="../wp-content/themes/kleo-child/style_ver-3.0.9.css"
+        type="text/css" media="all" />
 
-			// Now we have extra slides at both ends
-			let currentIndex = visibleItems; // Start at the "real" first slide
-			let allowShift = true;
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.querySelector(".kleo-carousel");
+            const items = document.querySelectorAll(".kleo-carousel li");
+            const prevBtn = document.querySelector(".carousel-prev");
+            const nextBtn = document.querySelector(".carousel-next");
 
-			carousel.style.display = "flex";
-			carousel.style.transition = "transform 0.4s ease";
-			carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+            const visibleItems = 3;
+            const itemWidth = items[0].offsetWidth;
 
-			function shiftSlide(dir) {
-				if (!allowShift) return;
-				allowShift = false;
+            // Clone last N items to start
+            for (let i = items.length - visibleItems; i < items.length; i++) {
+                const clone = items[i].cloneNode(true);
+                carousel.insertBefore(clone, carousel.firstChild);
+            }
 
-				currentIndex += dir;
-				carousel.style.transition = "transform 0.4s ease";
-				carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+            // Clone first N items to end
+            for (let i = 0; i < visibleItems; i++) {
+                const clone = items[i].cloneNode(true);
+                carousel.appendChild(clone);
+            }
 
-				carousel.addEventListener("transitionend", checkIndex, { once: true });
-			}
+            // Now we have extra slides at both ends
+            let currentIndex = visibleItems; // Start at the "real" first slide
+            let allowShift = true;
 
-			function checkIndex() {
-				// If we moved past the last real slide, reset to first real slide
-				if (currentIndex >= items.length + visibleItems) {
-					currentIndex = visibleItems;
-					carousel.style.transition = "none";
-					carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
-				}
+            carousel.style.display = "flex";
+            carousel.style.transition = "transform 0.4s ease";
+            carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
 
-				// If we moved before the first real slide, reset to last real slide
-				if (currentIndex < visibleItems) {
-					currentIndex = items.length + visibleItems - 1;
-					carousel.style.transition = "none";
-					carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
-				}
+            function shiftSlide(dir) {
+                if (!allowShift) return;
+                allowShift = false;
 
-				allowShift = true;
-			}
+                currentIndex += dir;
+                carousel.style.transition = "transform 0.4s ease";
+                carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
 
-			nextBtn.addEventListener("click", (e) => {
-				e.preventDefault();
-				shiftSlide(1);
-			});
+                carousel.addEventListener("transitionend", checkIndex, { once: true });
+            }
 
-			prevBtn.addEventListener("click", (e) => {
-				e.preventDefault();
-				shiftSlide(-1);
-			});
-		});
-	</script>
+            function checkIndex() {
+                // If we moved past the last real slide, reset to first real slide
+                if (currentIndex >= items.length + visibleItems) {
+                    currentIndex = visibleItems;
+                    carousel.style.transition = "none";
+                    carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+                }
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const goTopBtn = document.querySelector(".kleo-go-top");
+                // If we moved before the first real slide, reset to last real slide
+                if (currentIndex < visibleItems) {
+                    currentIndex = items.length + visibleItems - 1;
+                    carousel.style.transition = "none";
+                    carousel.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+                }
 
-			goTopBtn.addEventListener("click", function (e) {
-				e.preventDefault(); // prevent default anchor jump
-				window.scrollTo({
-					top: 0,
-					behavior: "smooth" // smooth scroll to top
-				});
-			});
-		});
-	</script>
+                allowShift = true;
+            }
+
+            nextBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                shiftSlide(1);
+            });
+
+            prevBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                shiftSlide(-1);
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const goTopBtn = document.querySelector(".kleo-go-top");
+
+            goTopBtn.addEventListener("click", function (e) {
+                e.preventDefault(); // prevent default anchor jump
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // smooth scroll to top
+                });
+            });
+        });
+    </script>
     <script type="text/javascript">
         /* <![CDATA[ */
         var monsterinsights_frontend = { "js_events_tracking": "true", "download_extensions": "doc,pdf,ppt,zip,xls,docx,pptx,xlsx", "inbound_paths": "[]", "home_url": "https:\/\/web.archive.org\/web\/20220627135019\/http:\/\/www.eastseakorea.com", "hash_tracking": "false" };
@@ -441,7 +445,7 @@
     class="page-template-default page page-id-7700 page-parent kleo-navbar-fixed wpb-js-composer js-comp-ver-4.7.1.1 vc_responsive"
     itemscope="" itemtype="http://schema.org/WebPage"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
     <script>__wm.rw(0);</script>
-    
+
     <script type="text/javascript">//<![CDATA[
         __wm.bt(750, 27, 25, 2, "web", "http://www.eastseakorea.com/ko/%EB%8F%99%ED%95%B4-%EC%86%8C%EA%B0%9C/", "20220627135019", 1996, "https://web-static.archive.org/_static/", ["https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi", "https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv"], false);
         __wm.rw(1);
@@ -487,8 +491,7 @@
                                 </div>
 
                                 <strong class="logo">
-                                    <a
-                                        href="http://www.eastseakorea.com/ko/7707-2.html">
+                                    <a href="http://www.eastseakorea.com/ko/7707-2.html">
 
 
                                         <img id="logo_img" title="eastseakorea"
@@ -508,36 +511,40 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7700 current_page_item menu-item-7702 active">
                                         <a title="동해 소개"
                                             href="http://www.eastseakorea.com/ko/%eb%8f%99%ed%95%b4-%ec%86%8c%ea%b0%9c.html"
-                                            style="line-height: 128px;">동해 소개</a></li>
+                                            style="line-height: 128px;">동해 소개</a>
+                                    </li>
                                     <li id="menu-item-7703"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7703">
                                         <a title="동해의 역사"
                                             href="http://www.eastseakorea.com/ko/%eb%8f%99%ed%95%b4%ec%9d%98-%ec%97%ad%ec%82%ac.html"
-                                            style="line-height: 128px;">동해의 역사</a></li>
+                                            style="line-height: 128px;">동해의 역사</a>
+                                    </li>
                                     <li id="menu-item-7774"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7774">
                                         <a title="갤러리"
                                             href="http://www.eastseakorea.com/ko/%ea%b0%a4%eb%9f%ac%eb%a6%ac.html"
-                                            style="line-height: 128px;">갤러리</a></li>
+                                            style="line-height: 128px;">갤러리</a>
+                                    </li>
                                     <li id="menu-item-7704-en"
                                         class="lang-item lang-item-33 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-7704-en">
                                         <a href="http://www.eastseakorea.com/east-sea-information2.html"
                                             hreflang="en-US" lang="en-US" style="line-height: 128px;"><img
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC"
-                                                title="English" alt="English"></a></li>
+                                                title="English" alt="English"></a>
+                                    </li>
                                     <li id="menu-item-7704-ko"
                                         class="lang-item lang-item-36 lang-item-ko current-lang menu-item menu-item-type-custom menu-item-object-custom menu-item-7704-ko">
                                         <a href="http://www.eastseakorea.com/ko/%eb%8f%99%ed%95%b4-%ec%86%8c%ea%b0%9c.html"
                                             hreflang="ko-KR" lang="ko-KR" style="line-height: 128px;"><img
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHiSURBVHjaYvz4/SsDEvj37x+YhLCgGAb+ADFAADEBpfk4uIDo2YNHV89fZP3PyMfBLcDFxc/NLcjNy8nMfPnM2cd374ry84sJCAE1AAQQC8Tg169fb9269cP7DyJiYsqKiv/v3v3/589/FZVnL16uXbtGQFBQWEhIRlYWaAVAAIFs+P///4cPH37//m1oYqwsJfm/t/d/QcH/vJz/ddUKYqJuXl5v3rx5/uIFUBnQBoAAYgT6gZedE6jt1atXXLy8jHsOcEyd+P/37y9/mH7+/CWQEPEpIvLj6zdS0lKMjIwPnj0BCCAWiC+BukVERICMnW/4jP8w/2bibDLMf/aTvfrxOX12dm5pKaACBkZGoJMAAgioAaQaCN6+fcvDzfVVXTdXvZKZjfURu9iHHz/vGrupf//85u1HSUlJRqCef/8AAogJiIGqb968OW3aNKC/PQw4VS1UnjALMXz/4azD5uokvW/f/vr6+pMnT0L8ABBALP/AocTFxQXkHzx0WFNLszZM7ZIJ+5+//3UV2O/du7l6zXphYWEBAQGgAqCTAAII5AcgS1pa2t3d/eXLl2JikkD9ekpcEHeKi0t5eHgANairq4PjlQEggBifv32LHJFwiuEPmMEAYf/5A1YNxAABBgCFMRk3L8TWJAAAAABJRU5ErkJggg=="
-                                                title="한국어" alt="한국어"></a></li>
+                                                title="한국어" alt="한국어"></a>
+                                    </li>
                                     <li id="nav-menu-item-search" class="menu-item kleo-search-nav"> <a
                                             class="search-trigger" href="#" style="line-height: 128px;"><i
                                                 class="icon icon-search"></i></a>
                                         <div class="kleo-search-wrap searchHidden" id="ajax_search_container">
                                             <form class="form-inline" id="ajax_searchform"
-                                                action="http://www.eastseakorea.com/ko/7707-2.html"
-                                                data-context="">
+                                                action="http://www.eastseakorea.com/ko/7707-2.html" data-context="">
                                                 <input name="s" class="ajax_s form-control" autocomplete="off"
                                                     type="text" value="" placeholder="Start typing to search...">
                                                 <span class="kleo-ajax-search-loading"><i
@@ -610,6 +617,7 @@
                                                     <p>동해의 북쪽 40°N 부근에서는 대한난류와 북한한류가 마주쳐 이른바 조경(潮境)을 이루어 좋은 어장을 형성한다.
                                                         해저곡(海底谷)이 발달한 동한만은 저서어류(底棲魚類)의 어장으로 세계 4대어장의 하나인 북태평양서부 어장중에서
                                                         중심어장을 이룬다.</p>
+                                                        <p><img class="alignleft" src="../../wp-content/uploads/2015/11/sub1-pic1.gif" alt="19th - Map Sea of Korea (East Sea)" width="395" height="177">19번째 - 한국해(동해) 지도</p>
                                                 </section>
                                             </div>
                                         </div>
@@ -748,8 +756,7 @@
 
                                             </li>
                                             <li class="news-content">
-                                                <a class="news-link"
-                                                    href="http://www.eastseakorea.com/ko/7707-2.html">
+                                                <a class="news-link" href="http://www.eastseakorea.com/ko/7707-2.html">
                                                     <span class="news-thumb"></span>
                                                     <span class="news-headline">East Sea Home (Korean)<small
                                                             class="news-time">06/13/2017</small></span>
@@ -788,15 +795,14 @@
                                     <h4 class="widget-title">최근 댓글</h4>
                                     <ul id="recentcomments"></ul>
                                 </div>
-                               <div id="item_likes_widget-2" class="widget widget_item_likes_widget">
+                                <div id="item_likes_widget-2" class="widget widget_item_likes_widget">
                                     <h4 class="widget-title">Popular Posts</h4>
                                     <ul class="popular-posts">
                                         <li><a
                                                 href="http://www.eastseakorea.com/korean-history-included-us-textbook-2018-ministry.html">More
                                                 Korean history to be included in US textbook from 2018: ministry</a>
                                         </li>
-                                        <li><a
-                                                href="http://www.eastseakorea.com/moon-vows-new-era-peace-2019.html">Moon
+                                        <li><a href="http://www.eastseakorea.com/moon-vows-new-era-peace-2019.html">Moon
                                                 vows new era of peace from 2019</a></li>
                                         <li><a
                                                 href="http://www.eastseakorea.com/new-historical-map-found-japan-marks-dokdo-korean-territory.html">New
@@ -809,464 +815,408 @@
                                                 잘못 표기된 세계지도에 ‘동해’로 바로잡은 할리우드 배우</a></li>
                                     </ul>
                                 </div>
-                                <div class="wpb_wrapper">
-                                    <div class="kleo-gap" style="height:10px;line-height:10px;">
-                                    </div>
-                                    <div class="kleo_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <div class="cff-likebox cff-outside cff-top">
-                                                <script
-                                                    src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-                                                <div class="fb-page fb_iframe_widget"
-                                                    data-href="https://www.facebook.com/eastseakorea" data-width="300"
-                                                    data-hide-cover="false" data-show-facepile="false"
-                                                    data-small-header="false" data-hide-cta="false"
-                                                    data-show-posts="false" data-adapt-container-width="true"
-                                                    fb-xfbml-state="rendered"
-                                                    fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=290&amp;hide_cover=false&amp;hide_cta=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Feastseakorea&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=false&amp;small_header=false&amp;width=300">
-                                                    <span
-                                                        style="vertical-align: bottom; width: 290px; height: 130px;"><iframe
-                                                            name="f214d019ded4e8d5b" width="300px" height="1000px"
-                                                            data-testid="fb:page Facebook Social Plugin"
-                                                            title="fb:page Facebook Social Plugin" frameborder="0"
-                                                            allowtransparency="true" allowfullscreen="true"
-                                                            scrolling="no" allow="encrypted-media"
-                                                            src="https://www.facebook.com/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df6036d34446562eab%26domain%3D127.0.0.1%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252F127.0.0.1%253A5500%252Ff49e7095c51bc781e%26relation%3Dparent.parent&amp;container_width=290&amp;hide_cover=false&amp;hide_cta=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Feastseakorea&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=false&amp;small_header=false&amp;width=300"
-                                                            style="border: none; visibility: visible; width: 290px; height: 130px;"
-                                                            class=""></iframe></span>
-                                                </div>
-                                                <div id="fb-root" class=" fb_reset">
-                                                    <div
-                                                        style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-                                                        <div></div>
-                                                    </div>
-                                                </div>
+                              <div id="text-4" class="widget widget_text">
+                                    <div class="textwidget">
+                                        <div class="cff-likebox cff-outside cff-top">
+                                            <script src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+                                            <div class="fb-page fb_iframe_widget"
+                                                data-href="https://www.facebook.com/eastseakorea" data-width="300"
+                                                data-hide-cover="false" data-show-facepile="false"
+                                                data-small-header="false" data-hide-cta="false" data-show-posts="false"
+                                                data-adapt-container-width="true" fb-xfbml-state="rendered"
+                                                fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=247&amp;hide_cover=false&amp;hide_cta=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Feastseakorea&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=false&amp;small_header=false&amp;width=300">
+                                                <span
+                                                    style="vertical-align: bottom; width: 247px; height: 130px;"><iframe
+                                                        name="f2ecd8098a66a5543" width="300px" height="1000px"
+                                                        data-testid="fb:page Facebook Social Plugin"
+                                                        title="fb:page Facebook Social Plugin" frameborder="0"
+                                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                                        allow="autoplay 'self'; fullscreen 'self'"
+                                                        src="https://www.facebook.com/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df215af3b5139197ea%26domain%3D127.0.0.1%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252F127.0.0.1%253A5500%252Ffeaca697da223d1a5%26relation%3Dparent.parent&amp;container_width=247&amp;hide_cover=false&amp;hide_cta=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Feastseakorea&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=false&amp;small_header=false&amp;width=300"
+                                                        style="border: none; visibility: visible; width: 247px; height: 130px;"
+                                                        class=""></iframe></span>
                                             </div>
-                                            <div class="cff-wrapper">
-                                                <div id="cff" data-char="400" class="cff-fixed-height "
-                                                    style="width:100%; height:450px; padding:20px; background-color:#f7f7f7; ">
-                                                    <div class="cff-item cff-link-item author-eastsea"
-                                                        id="cff_463713023648173_1651036484915815">
-                                                        <div class="cff-author"><a
-                                                                href="https://facebook.com/463713023648173"
-                                                                target="_blank" rel="nofollow"
-                                                                title="EastSea on Facebook">
-                                                                <div class="cff-author-text">
-                                                                    <p class="cff-page-name cff-author-date">
-                                                                        EastSea</p>
-                                                                    <p class="cff-date"> 3 weeks ago
-                                                                    </p>
-                                                                </div>
-                                                                <div class="cff-author-img"><img
-                                                                        src="../463713023648173/picture-type-square.jpg"
-                                                                        title="EastSea" alt="EastSea" width="40"
-                                                                        height="40"></div>
-                                                            </a></div>
-                                                        <p class="cff-post-text"><span class="cff-text"
-                                                                data-color="">"동해" 명칭 사용을
-                                                                널리 알리기 위해 우리 외교부에서 '동해', '독도' 홍보영상을
-                                                                만들어 영어, 일본어 등 6개국 언어 버전의 영상을
-                                                                youTube에 게시하였습니다.<br> 영상 내용은 다양한
-                                                                역사적 기록과 증거들이 담겨져 있다고 합니다. 일본의
-                                                                "일본해" 주장과 고집이 조금이나마 움츠러
-                                                                들었으면 하는 바람입니다.<br> 이어 외교부는 앞으로도
-                                                                중국어, 아랍어, 이탈리아어 등 추가 4개국 언어 버전을 홍보
-                                                                클립에</span><span class="cff-expand"
-                                                                style="display: inline;">... <a href="#"
-                                                                    style="color: #"><span class="cff-more">See
-                                                                        More</span><span class="cff-less">See
-                                                                        Less</span></a></span></p>
-                                                        <div class="cff-shared-link" style="border: 1px solid #; ">
-                                                            <div class="cff-text-link cff-no-image">
-                                                                <p class="cff-link-title"><a
-                                                                        href="http://english.yonhapnews.co.kr/news/2017/09/14/0200000000AEN20170914005900315.html"
-                                                                        target="_blank" rel="nofollow"
-                                                                        style="color:#;">S. Korea
-                                                                        unveils East Sea video in
-                                                                        Japanese, 4 other
-                                                                        languages</a></p>
-                                                                <p class="cff-link-caption" style="color:#;">
-                                                                    english.yonhapnews.co.kr</p>
-                                                                <p class="cff-post-desc" style="font-size:12px; ">
-                                                                    <span>The Ministry of Foreign
-                                                                        Affairs said Thursday it has
-                                                                        posted video clips online in
-                                                                        Japanese and four other
-                                                                        languages to promote a wider
-                                                                        global use of the East Sea
-                                                                        name in referring to the
-                                                                        waters lying ... </span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cff-post-links"><a class="cff-viewpost-facebook"
-                                                                href="https://www.facebook.com/463713023648173_1651036484915815"
-                                                                title="View on Facebook" target="_blank"
-                                                                rel="nofollow">View
-                                                                on Facebook</a>
-                                                            <div class="cff-share-container"><span
-                                                                    class="cff-dot">·</span><a class="cff-share-link"
-                                                                    href="javascript:void(0);" title="Share">Share</a>
-                                                                <p class="cff-share-tooltip"><a
-                                                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1651036484915815"
-                                                                        target="_blank" class="cff-facebook-icon"><i
-                                                                            class="fa fa-facebook-square"></i></a><a
-                                                                        href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1651036484915815"
-                                                                        target="_blank" class="cff-twitter-icon"><i
-                                                                            class="fa fa-twitter"></i></a><a
-                                                                        href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1651036484915815"
-                                                                        target="_blank" class="cff-google-icon"><i
-                                                                            class="fa fa-google-plus"></i></a><a
-                                                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1651036484915815&amp;title=%26quot%3B%EB%8F%99%ED%95%B4%26quot%3B%20%EB%AA%85%EC%B9%AD%20%EC%82%AC%EC%9A%A9%EC%9D%84%20%EB%84%90%EB%A6%AC%20%EC%95%8C%EB%A6%AC%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%EC%9A%B0%EB%A6%AC%20%EC%99%B8%EA%B5%90%EB%B6%80%EC%97%90%EC%84%9C%20%27%EB%8F%99%ED%95%B4%27%2C%20%27%EB%8F%85%EB%8F%84%27%20%ED%99%8D%EB%B3%B4%EC%98%81%EC%83%81%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EC%98%81%EC%96%B4%2C%20%EC%9D%BC%EB%B3%B8%EC%96%B4%20%EB%93%B1%206%EA%B0%9C%EA%B5%AD%20%EC%96%B8%EC%96%B4%20%EB%B2%84%EC%A0%84%EC%9D%98%20%EC%98%81%EC%83%81%EC%9D%84%20youTube%EC%97%90%20%EA%B2%8C%EC%8B%9C%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4.%EC%98%81%EC%83%81%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%AD%EC%82%AC%EC%A0%81%20%EA%B8%B0%EB%A1%9D%EA%B3%BC%20%EC%A6%9D%EA%B1%B0%EB%93%A4%EC%9D%B4%20%EB%8B%B4%EA%B2%A8%EC%A0%B8%20%EC%9E%88%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%20%EC%9D%BC%EB%B3%B8%EC%9D%98%20%26quot%3B%EC%9D%BC%EB%B3%B8%ED%95%B4%26quot%3B%20%EC%A3%BC%EC%9E%A5%EA%B3%BC%20%EA%B3%A0%EC%A7%91%EC%9D%B4%20%EC%A1%B0%EA%B8%88%EC%9D%B4%EB%82%98%EB%A7%88%20%EC%9B%80%EC%B8%A0%EB%9F%AC%20%EB%93%A4%EC%97%88%EC%9C%BC%EB%A9%B4%20%ED%95%98%EB%8A%94%20%EB%B0%94%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.%EC%9D%B4%EC%96%B4%20%EC%99%B8%EA%B5%90%EB%B6%80%EB%8A%94%20%EC%95%9E%EC%9C%BC%EB%A1%9C%EB%8F%84%20%EC%A4%91%EA%B5%AD%EC%96%B4%2C%20%EC%95%84%EB%9E%8D%EC%96%B4%2C%20%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84%EC%96%B4%20%EB%93%B1%20%EC%B6%94%EA%B0%80%204%EA%B0%9C%EA%B5%AD%20%EC%96%B8%EC%96%B4%20%EB%B2%84%EC%A0%84%EC%9D%84%20%ED%99%8D%EB%B3%B4%20%ED%81%B4%EB%A6%BD%EC%97%90%20%EA%B2%8C%EC%8B%9C%ED%95%A0%20%EC%98%88%EC%A0%95%EC%9D%B4%EB%9D%BC%EB%8F%84%20%ED%95%A9%EB%8B%88%EB%8B%A4.%EC%99%B8%EA%B5%90%EB%B6%80%20%EB%BF%90%EB%A7%8C%20%EC%95%84%EB%8B%88%EB%9D%BC%20%EC%9A%B0%EB%A6%AC%20%EA%B5%AD%EB%AF%BC%EB%93%A4%EC%9D%B4%20%ED%9E%98%20%EB%AA%A8%EC%95%84%20%EC%A0%81%EA%B7%B9%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%99%8D%EB%B3%B4%EB%90%98%EA%B8%B8%20%EB%B0%94%EB%9D%BC%EB%A9%B0%2C%20%EC%A0%80%ED%9D%AC%EB%8F%84%20%EC%82%AC%EC%9D%B4%EB%B2%84%20%EB%AF%BC%EA%B0%84%20%EC%99%B8%EA%B5%90%EA%B4%80%20%EC%A4%91%EC%97%90%20%ED%95%98%EB%82%98%EB%A1%9C%20%EC%A0%81%EA%B7%B9%20%EC%95%8C%EB%A6%AC%EB%8F%84%EB%A1%9D%20%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%ED%8C%8C%EC%9D%B4%ED%8C%85%21%20%EC%99%B8%EA%B5%90%EB%B6%80%EB%8F%84%20%ED%8C%8C%EC%9D%B4%ED%8C%85%21%20%EB%8F%99%ED%95%B4%21%20%ED%8C%8C%EC%9D%B4%ED%8C%85%21%21%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%EC%A3%BC%EC%84%B8%EC%9A%94%21english.yonhapnews.co.kr%2Fnews%2F2017%2F09%2F14%2F0200000000AEN20170914005900315.html%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-linkedin-icon"><i
-                                                                            class="fa fa-linkedin"></i></a><a
-                                                                        href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1651036484915815%20-%20%26quot%3B%EB%8F%99%ED%95%B4%26quot%3B%20%EB%AA%85%EC%B9%AD%20%EC%82%AC%EC%9A%A9%EC%9D%84%20%EB%84%90%EB%A6%AC%20%EC%95%8C%EB%A6%AC%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%EC%9A%B0%EB%A6%AC%20%EC%99%B8%EA%B5%90%EB%B6%80%EC%97%90%EC%84%9C%20%27%EB%8F%99%ED%95%B4%27%2C%20%27%EB%8F%85%EB%8F%84%27%20%ED%99%8D%EB%B3%B4%EC%98%81%EC%83%81%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EC%98%81%EC%96%B4%2C%20%EC%9D%BC%EB%B3%B8%EC%96%B4%20%EB%93%B1%206%EA%B0%9C%EA%B5%AD%20%EC%96%B8%EC%96%B4%20%EB%B2%84%EC%A0%84%EC%9D%98%20%EC%98%81%EC%83%81%EC%9D%84%20youTube%EC%97%90%20%EA%B2%8C%EC%8B%9C%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4.%EC%98%81%EC%83%81%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%AD%EC%82%AC%EC%A0%81%20%EA%B8%B0%EB%A1%9D%EA%B3%BC%20%EC%A6%9D%EA%B1%B0%EB%93%A4%EC%9D%B4%20%EB%8B%B4%EA%B2%A8%EC%A0%B8%20%EC%9E%88%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%20%EC%9D%BC%EB%B3%B8%EC%9D%98%20%26quot%3B%EC%9D%BC%EB%B3%B8%ED%95%B4%26quot%3B%20%EC%A3%BC%EC%9E%A5%EA%B3%BC%20%EA%B3%A0%EC%A7%91%EC%9D%B4%20%EC%A1%B0%EA%B8%88%EC%9D%B4%EB%82%98%EB%A7%88%20%EC%9B%80%EC%B8%A0%EB%9F%AC%20%EB%93%A4%EC%97%88%EC%9C%BC%EB%A9%B4%20%ED%95%98%EB%8A%94%20%EB%B0%94%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.%EC%9D%B4%EC%96%B4%20%EC%99%B8%EA%B5%90%EB%B6%80%EB%8A%94%20%EC%95%9E%EC%9C%BC%EB%A1%9C%EB%8F%84%20%EC%A4%91%EA%B5%AD%EC%96%B4%2C%20%EC%95%84%EB%9E%8D%EC%96%B4%2C%20%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84%EC%96%B4%20%EB%93%B1%20%EC%B6%94%EA%B0%80%204%EA%B0%9C%EA%B5%AD%20%EC%96%B8%EC%96%B4%20%EB%B2%84%EC%A0%84%EC%9D%84%20%ED%99%8D%EB%B3%B4%20%ED%81%B4%EB%A6%BD%EC%97%90%20%EA%B2%8C%EC%8B%9C%ED%95%A0%20%EC%98%88%EC%A0%95%EC%9D%B4%EB%9D%BC%EB%8F%84%20%ED%95%A9%EB%8B%88%EB%8B%A4.%EC%99%B8%EA%B5%90%EB%B6%80%20%EB%BF%90%EB%A7%8C%20%EC%95%84%EB%8B%88%EB%9D%BC%20%EC%9A%B0%EB%A6%AC%20%EA%B5%AD%EB%AF%BC%EB%93%A4%EC%9D%B4%20%ED%9E%98%20%EB%AA%A8%EC%95%84%20%EC%A0%81%EA%B7%B9%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%99%8D%EB%B3%B4%EB%90%98%EA%B8%B8%20%EB%B0%94%EB%9D%BC%EB%A9%B0%2C%20%EC%A0%80%ED%9D%AC%EB%8F%84%20%EC%82%AC%EC%9D%B4%EB%B2%84%20%EB%AF%BC%EA%B0%84%20%EC%99%B8%EA%B5%90%EA%B4%80%20%EC%A4%91%EC%97%90%20%ED%95%98%EB%82%98%EB%A1%9C%20%EC%A0%81%EA%B7%B9%20%EC%95%8C%EB%A6%AC%EB%8F%84%EB%A1%9D%20%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%ED%8C%8C%EC%9D%B4%ED%8C%85%21%20%EC%99%B8%EA%B5%90%EB%B6%80%EB%8F%84%20%ED%8C%8C%EC%9D%B4%ED%8C%85%21%20%EB%8F%99%ED%95%B4%21%20%ED%8C%8C%EC%9D%B4%ED%8C%85%21%21%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%EC%A3%BC%EC%84%B8%EC%9A%94%21english.yonhapnews.co.kr%2Fnews%2F2017%2F09%2F14%2F0200000000AEN20170914005900315.html%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-email-icon"><i
-                                                                            class="fa fa-envelope"></i></a><i
-                                                                        class="fa fa-play fa-rotate-90"></i>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cff-item cff-link-item author-eastsea"
-                                                        id="cff_463713023648173_1628366383849492">
-                                                        <div class="cff-author"><a
-                                                                href="https://facebook.com/463713023648173"
-                                                                target="_blank" rel="nofollow"
-                                                                title="EastSea on Facebook">
-                                                                <div class="cff-author-text">
-                                                                    <p class="cff-page-name cff-author-date">
-                                                                        EastSea</p>
-                                                                    <p class="cff-date"> 1 month ago
-                                                                    </p>
-                                                                </div>
-                                                                <div class="cff-author-img"><img
-                                                                        src="../463713023648173/picture-type-square.jpg"
-                                                                        title="EastSea" alt="EastSea" width="40"
-                                                                        height="40"></div>
-                                                            </a></div>
-                                                        <p class="cff-post-text"><span class="cff-text" data-color="">최근
-                                                                잦은
-                                                                북한의 핵실험으로 전 세계젹 긴장감과 관심이 기울어 지는
-                                                                가운데에, 북한의 계속되는 도발에 적극적인 대응을 위해 동해
-                                                                해상에서 해군의 훈련이 실시 되었다고
-                                                                합니다.<br> "자주국방" 든든한 대한민국의
-                                                                군인 여러분들의 땀방울 덕분에, 많은 국민들이 안심하고 지내고
-                                                                있습니다. <br> <br> 대한민국 국군 장병 여러분과
-                                                                대한민국 '동해'를 위해 저희도 힘쓰겠습니다^^
-                                                                <br> <br> 자세한 내용은 아래 링크를</span><span class="cff-expand"
-                                                                style="display: inline;">... <a href="#"
-                                                                    style="color: #"><span class="cff-more">See
-                                                                        More</span><span class="cff-less">See
-                                                                        Less</span></a></span></p>
-                                                        <div class="cff-shared-link" style="border: 1px solid #; ">
-                                                            <div class="cff-text-link cff-no-image">
-                                                                <p class="cff-link-title"><a
-                                                                        href="http://www.koreaherald.com/view.php?ud=20170905000126"
-                                                                        target="_blank" rel="nofollow"
-                                                                        style="color:#;">S. Korean
-                                                                        Navy holds naval training
-                                                                        against N. Korea</a></p>
-                                                                <p class="cff-link-caption" style="color:#;">
-                                                                    koreaherald.com
-                                                                </p>
-                                                                <p class="cff-post-desc" style="font-size:12px; ">
-                                                                    <span>South Korea's Navy said
-                                                                        Tuesday it has conducted
-                                                                        massive live-fire drills in
-                                                                        the East Sea in a show of
-                                                                        its resolve to retaliate
-                                                                        against North Korea's
-                                                                        provocations.Among assets
-                                                                        mobilized were the 2,500...
-                                                                    </span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cff-post-links"><a class="cff-viewpost-facebook"
-                                                                href="https://www.facebook.com/463713023648173_1628366383849492"
-                                                                title="View on Facebook" target="_blank"
-                                                                rel="nofollow">View
-                                                                on Facebook</a>
-                                                            <div class="cff-share-container"><span
-                                                                    class="cff-dot">·</span><a class="cff-share-link"
-                                                                    href="javascript:void(0);" title="Share">Share</a>
-                                                                <p class="cff-share-tooltip"><a
-                                                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1628366383849492"
-                                                                        target="_blank" class="cff-facebook-icon"><i
-                                                                            class="fa fa-facebook-square"></i></a><a
-                                                                        href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1628366383849492"
-                                                                        target="_blank" class="cff-twitter-icon"><i
-                                                                            class="fa fa-twitter"></i></a><a
-                                                                        href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1628366383849492"
-                                                                        target="_blank" class="cff-google-icon"><i
-                                                                            class="fa fa-google-plus"></i></a><a
-                                                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1628366383849492&amp;title=%EC%B5%9C%EA%B7%BC%20%EC%9E%A6%EC%9D%80%20%EB%B6%81%ED%95%9C%EC%9D%98%20%ED%95%B5%EC%8B%A4%ED%97%98%EC%9C%BC%EB%A1%9C%20%EC%A0%84%20%EC%84%B8%EA%B3%84%EC%A0%B9%20%EA%B8%B4%EC%9E%A5%EA%B0%90%EA%B3%BC%20%EA%B4%80%EC%8B%AC%EC%9D%B4%20%EA%B8%B0%EC%9A%B8%EC%96%B4%20%EC%A7%80%EB%8A%94%20%EA%B0%80%EC%9A%B4%EB%8D%B0%EC%97%90%2C%20%EB%B6%81%ED%95%9C%EC%9D%98%20%EA%B3%84%EC%86%8D%EB%90%98%EB%8A%94%20%EB%8F%84%EB%B0%9C%EC%97%90%20%EC%A0%81%EA%B7%B9%EC%A0%81%EC%9D%B8%20%EB%8C%80%EC%9D%91%EC%9D%84%20%EC%9C%84%ED%95%B4%20%20%EB%8F%99%ED%95%B4%20%ED%95%B4%EC%83%81%EC%97%90%EC%84%9C%20%ED%95%B4%EA%B5%B0%EC%9D%98%20%ED%9B%88%EB%A0%A8%EC%9D%B4%20%EC%8B%A4%EC%8B%9C%20%EB%90%98%EC%97%88%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%26quot%3B%EC%9E%90%EC%A3%BC%EA%B5%AD%EB%B0%A9%26quot%3B%20%EB%93%A0%EB%93%A0%ED%95%9C%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98%20%EA%B5%B0%EC%9D%B8%20%EC%97%AC%EB%9F%AC%EB%B6%84%EB%93%A4%EC%9D%98%20%EB%95%80%EB%B0%A9%EC%9A%B8%20%EB%8D%95%EB%B6%84%EC%97%90%2C%20%EB%A7%8E%EC%9D%80%20%EA%B5%AD%EB%AF%BC%EB%93%A4%EC%9D%B4%20%EC%95%88%EC%8B%AC%ED%95%98%EA%B3%A0%20%EC%A7%80%EB%82%B4%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B5%AD%EA%B5%B0%20%EC%9E%A5%EB%B3%91%20%EC%97%AC%EB%9F%AC%EB%B6%84%EA%B3%BC%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%27%EB%8F%99%ED%95%B4%27%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EC%A0%80%ED%9D%AC%EB%8F%84%20%ED%9E%98%EC%93%B0%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4%5E%5E%20%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%20%EC%A3%BC%EC%84%B8%EC%9A%94%21www.koreaherald.com%2Fview.php%3Fud%3D20170905000126%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-linkedin-icon"><i
-                                                                            class="fa fa-linkedin"></i></a><a
-                                                                        href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1628366383849492%20-%20%EC%B5%9C%EA%B7%BC%20%EC%9E%A6%EC%9D%80%20%EB%B6%81%ED%95%9C%EC%9D%98%20%ED%95%B5%EC%8B%A4%ED%97%98%EC%9C%BC%EB%A1%9C%20%EC%A0%84%20%EC%84%B8%EA%B3%84%EC%A0%B9%20%EA%B8%B4%EC%9E%A5%EA%B0%90%EA%B3%BC%20%EA%B4%80%EC%8B%AC%EC%9D%B4%20%EA%B8%B0%EC%9A%B8%EC%96%B4%20%EC%A7%80%EB%8A%94%20%EA%B0%80%EC%9A%B4%EB%8D%B0%EC%97%90%2C%20%EB%B6%81%ED%95%9C%EC%9D%98%20%EA%B3%84%EC%86%8D%EB%90%98%EB%8A%94%20%EB%8F%84%EB%B0%9C%EC%97%90%20%EC%A0%81%EA%B7%B9%EC%A0%81%EC%9D%B8%20%EB%8C%80%EC%9D%91%EC%9D%84%20%EC%9C%84%ED%95%B4%20%20%EB%8F%99%ED%95%B4%20%ED%95%B4%EC%83%81%EC%97%90%EC%84%9C%20%ED%95%B4%EA%B5%B0%EC%9D%98%20%ED%9B%88%EB%A0%A8%EC%9D%B4%20%EC%8B%A4%EC%8B%9C%20%EB%90%98%EC%97%88%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%26quot%3B%EC%9E%90%EC%A3%BC%EA%B5%AD%EB%B0%A9%26quot%3B%20%EB%93%A0%EB%93%A0%ED%95%9C%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98%20%EA%B5%B0%EC%9D%B8%20%EC%97%AC%EB%9F%AC%EB%B6%84%EB%93%A4%EC%9D%98%20%EB%95%80%EB%B0%A9%EC%9A%B8%20%EB%8D%95%EB%B6%84%EC%97%90%2C%20%EB%A7%8E%EC%9D%80%20%EA%B5%AD%EB%AF%BC%EB%93%A4%EC%9D%B4%20%EC%95%88%EC%8B%AC%ED%95%98%EA%B3%A0%20%EC%A7%80%EB%82%B4%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B5%AD%EA%B5%B0%20%EC%9E%A5%EB%B3%91%20%EC%97%AC%EB%9F%AC%EB%B6%84%EA%B3%BC%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%27%EB%8F%99%ED%95%B4%27%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EC%A0%80%ED%9D%AC%EB%8F%84%20%ED%9E%98%EC%93%B0%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4%5E%5E%20%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%20%EC%A3%BC%EC%84%B8%EC%9A%94%21www.koreaherald.com%2Fview.php%3Fud%3D20170905000126%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-email-icon"><i
-                                                                            class="fa fa-envelope"></i></a><i
-                                                                        class="fa fa-play fa-rotate-90"></i>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cff-item cff-link-item author-eastsea"
-                                                        id="cff_463713023648173_1616929344993196">
-                                                        <div class="cff-author"><a
-                                                                href="https://facebook.com/463713023648173"
-                                                                target="_blank" rel="nofollow"
-                                                                title="EastSea on Facebook">
-                                                                <div class="cff-author-text">
-                                                                    <p class="cff-page-name cff-author-date">
-                                                                        EastSea</p>
-                                                                    <p class="cff-date"> 2 months
-                                                                        ago </p>
-                                                                </div>
-                                                                <div class="cff-author-img"><img
-                                                                        src="../463713023648173/picture-type-square.jpg"
-                                                                        title="EastSea" alt="EastSea" width="40"
-                                                                        height="40"></div>
-                                                            </a></div>
-                                                        <p class="cff-post-text"><span class="cff-text"
-                                                                data-color="">일본의 한
-                                                                학자분께서 '한국의 독도 소유를 정당화 하는 책'을 출판 할거라는
-                                                                기분 좋은 기사입니다. 국적을 막론하고 올바른 역사 정립에
-                                                                힘써주시는 여러 학자분들의 노고에 항상
-                                                                감사합니다.<br> <br> 자세한 내용은 아래 링크를
-                                                                눌러주세요!<br> <a
-                                                                    href="http://koreatimes.co.kr/www/news/culture/2017/08/135_235015.html"
-                                                                    target="_blank"
-                                                                    rel="nofollow">koreatimes.co.kr/www/news/culture/2017/08/135_235015.html</a>
-                                                            </span><span class="cff-expand">... <a href="#"
-                                                                    style="color: #"><span class="cff-more">See
-                                                                        More</span><span class="cff-less">See
-                                                                        Less</span></a></span></p>
-                                                        <div class="cff-shared-link" style="border: 1px solid #; ">
-                                                            <div class="cff-text-link cff-no-image">
-                                                                <p class="cff-link-title"><a
-                                                                        href="http://koreatimes.co.kr/www/news/culture/2017/08/135_235015.html"
-                                                                        target="_blank" rel="nofollow"
-                                                                        style="color:#;">Japanese
-                                                                        scholar publishes book
-                                                                        justifying Korea's Dokdo
-                                                                        ownership</a></p>
-                                                                <p class="cff-link-caption" style="color:#;">
-                                                                    koreatimes.co.kr</p>
-                                                                <p class="cff-post-desc" style="font-size:12px; ">
-                                                                    <span>A
-                                                                        Japanese historian will
-                                                                        publish a Korean book
-                                                                        containing ample historic
-                                                                        evidence justifying South
-                                                                        Korea’s sovereignty over
-                                                                        Dokdo Island in the East
-                                                                        Sea. “Truth of Dokdo” is a
-                                                                        Korean translatio... </span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cff-post-links"><a class="cff-viewpost-facebook"
-                                                                href="https://www.facebook.com/463713023648173_1616929344993196"
-                                                                title="View on Facebook" target="_blank"
-                                                                rel="nofollow">View
-                                                                on Facebook</a>
-                                                            <div class="cff-share-container"><span
-                                                                    class="cff-dot">·</span><a class="cff-share-link"
-                                                                    href="javascript:void(0);" title="Share">Share</a>
-                                                                <p class="cff-share-tooltip"><a
-                                                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1616929344993196"
-                                                                        target="_blank" class="cff-facebook-icon"><i
-                                                                            class="fa fa-facebook-square"></i></a><a
-                                                                        href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1616929344993196"
-                                                                        target="_blank" class="cff-twitter-icon"><i
-                                                                            class="fa fa-twitter"></i></a><a
-                                                                        href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1616929344993196"
-                                                                        target="_blank" class="cff-google-icon"><i
-                                                                            class="fa fa-google-plus"></i></a><a
-                                                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1616929344993196&amp;title=%EC%9D%BC%EB%B3%B8%EC%9D%98%20%ED%95%9C%20%ED%95%99%EC%9E%90%EB%B6%84%EA%BB%98%EC%84%9C%20%27%ED%95%9C%EA%B5%AD%EC%9D%98%20%EB%8F%85%EB%8F%84%20%EC%86%8C%EC%9C%A0%EB%A5%BC%20%EC%A0%95%EB%8B%B9%ED%99%94%20%ED%95%98%EB%8A%94%20%EC%B1%85%27%EC%9D%84%20%EC%B6%9C%ED%8C%90%20%ED%95%A0%EA%B1%B0%EB%9D%BC%EB%8A%94%20%EA%B8%B0%EB%B6%84%20%EC%A2%8B%EC%9D%80%20%EA%B8%B0%EC%82%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EA%B5%AD%EC%A0%81%EC%9D%84%20%EB%A7%89%EB%A1%A0%ED%95%98%EA%B3%A0%20%EC%98%AC%EB%B0%94%EB%A5%B8%20%EC%97%AD%EC%82%AC%20%EC%A0%95%EB%A6%BD%EC%97%90%20%ED%9E%98%EC%8D%A8%EC%A3%BC%EC%8B%9C%EB%8A%94%20%EC%97%AC%EB%9F%AC%20%ED%95%99%EC%9E%90%EB%B6%84%EB%93%A4%EC%9D%98%20%EB%85%B8%EA%B3%A0%EC%97%90%20%ED%95%AD%EC%83%81%20%EA%B0%90%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4.%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%EC%A3%BC%EC%84%B8%EC%9A%94%21koreatimes.co.kr%2Fwww%2Fnews%2Fculture%2F2017%2F08%2F135_235015.html%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-linkedin-icon"><i
-                                                                            class="fa fa-linkedin"></i></a><a
-                                                                        href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1616929344993196%20-%20%EC%9D%BC%EB%B3%B8%EC%9D%98%20%ED%95%9C%20%ED%95%99%EC%9E%90%EB%B6%84%EA%BB%98%EC%84%9C%20%27%ED%95%9C%EA%B5%AD%EC%9D%98%20%EB%8F%85%EB%8F%84%20%EC%86%8C%EC%9C%A0%EB%A5%BC%20%EC%A0%95%EB%8B%B9%ED%99%94%20%ED%95%98%EB%8A%94%20%EC%B1%85%27%EC%9D%84%20%EC%B6%9C%ED%8C%90%20%ED%95%A0%EA%B1%B0%EB%9D%BC%EB%8A%94%20%EA%B8%B0%EB%B6%84%20%EC%A2%8B%EC%9D%80%20%EA%B8%B0%EC%82%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EA%B5%AD%EC%A0%81%EC%9D%84%20%EB%A7%89%EB%A1%A0%ED%95%98%EA%B3%A0%20%EC%98%AC%EB%B0%94%EB%A5%B8%20%EC%97%AD%EC%82%AC%20%EC%A0%95%EB%A6%BD%EC%97%90%20%ED%9E%98%EC%8D%A8%EC%A3%BC%EC%8B%9C%EB%8A%94%20%EC%97%AC%EB%9F%AC%20%ED%95%99%EC%9E%90%EB%B6%84%EB%93%A4%EC%9D%98%20%EB%85%B8%EA%B3%A0%EC%97%90%20%ED%95%AD%EC%83%81%20%EA%B0%90%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4.%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%EC%A3%BC%EC%84%B8%EC%9A%94%21koreatimes.co.kr%2Fwww%2Fnews%2Fculture%2F2017%2F08%2F135_235015.html%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-email-icon"><i
-                                                                            class="fa fa-envelope"></i></a><i
-                                                                        class="fa fa-play fa-rotate-90"></i>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cff-item cff-link-item author-eastsea"
-                                                        id="cff_463713023648173_1601509646535166">
-                                                        <div class="cff-author"><a
-                                                                href="https://facebook.com/463713023648173"
-                                                                target="_blank" rel="nofollow"
-                                                                title="EastSea on Facebook">
-                                                                <div class="cff-author-text">
-                                                                    <p class="cff-page-name cff-author-date">
-                                                                        EastSea</p>
-                                                                    <p class="cff-date"> 2 months
-                                                                        ago </p>
-                                                                </div>
-                                                                <div class="cff-author-img"><img
-                                                                        src="../463713023648173/picture-type-square.jpg"
-                                                                        title="EastSea" alt="EastSea" width="40"
-                                                                        height="40"></div>
-                                                            </a></div>
-                                                        <p class="cff-post-text"><span class="cff-text" data-color="">틀린
-                                                                것은
-                                                                바로잡고, 잘못한 것은 인정하는 것이 역사
-                                                                아닐까요?<br> 엇갈린 주장이 아닌, 일방적인 주장으로는
-                                                                진실을 이길 수 없을거라 믿고 있습니다. <br> 모든 역사
-                                                                위에 현재가 존재 합니다. 더 나은 미래를 위해 <br> 이
-                                                                역사적 갈등이 멈춰지길 바라봅니다.<br> <br> 자세한
-                                                                내용은 아래 링크를 눌러주세요!!<br> <a
-                                                                    href="http://english.yonhapnews.co.kr/search1/2603000000.html?cid=AEN20170807003600315"
-                                                                    target="_blank" rel="nofollow">en</a></span><span
-                                                                class="cff-expand" style="display: inline;">... <a
-                                                                    href="#" style="color: #"><span class="cff-more">See
-                                                                        More</span><span class="cff-less">See
-                                                                        Less</span></a></span></p>
-                                                        <div class="cff-shared-link" style="border: 1px solid #; ">
-                                                            <div class="cff-text-link cff-no-image">
-                                                                <p class="cff-link-title"><a
-                                                                        href="http://english.yonhapnews.co.kr/search1/2603000000.html?cid=AEN20170807003600315"
-                                                                        target="_blank" rel="nofollow"
-                                                                        style="color:#;">Yonhap News
-                                                                        Agency</a></p>
-                                                                <p class="cff-link-caption" style="color:#;">
-                                                                    english.yonhapnews.co.kr</p>
-                                                                <p class="cff-post-desc" style="font-size:12px; ">
-                                                                    <span>Yonhap news articles
-                                                                        produced by building a
-                                                                        network covering domestic
-                                                                        supplies in various
-                                                                        newspapers, broadcasting and
-                                                                        government departments,
-                                                                        major institutions, major
-                                                                        corporations, media, K-Pop,
-                                                                        K-W... </span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cff-post-links"><a class="cff-viewpost-facebook"
-                                                                href="https://www.facebook.com/463713023648173_1601509646535166"
-                                                                title="View on Facebook" target="_blank"
-                                                                rel="nofollow">View
-                                                                on Facebook</a>
-                                                            <div class="cff-share-container"><span
-                                                                    class="cff-dot">·</span><a class="cff-share-link"
-                                                                    href="javascript:void(0);" title="Share">Share</a>
-                                                                <p class="cff-share-tooltip"><a
-                                                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1601509646535166"
-                                                                        target="_blank" class="cff-facebook-icon"><i
-                                                                            class="fa fa-facebook-square"></i></a><a
-                                                                        href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1601509646535166"
-                                                                        target="_blank" class="cff-twitter-icon"><i
-                                                                            class="fa fa-twitter"></i></a><a
-                                                                        href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1601509646535166"
-                                                                        target="_blank" class="cff-google-icon"><i
-                                                                            class="fa fa-google-plus"></i></a><a
-                                                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1601509646535166&amp;title=%ED%8B%80%EB%A6%B0%20%EA%B2%83%EC%9D%80%20%EB%B0%94%EB%A1%9C%EC%9E%A1%EA%B3%A0%2C%20%EC%9E%98%EB%AA%BB%ED%95%9C%20%EA%B2%83%EC%9D%80%20%EC%9D%B8%EC%A0%95%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%B4%20%EC%97%AD%EC%82%AC%20%EC%95%84%EB%8B%90%EA%B9%8C%EC%9A%94%3F%EC%97%87%EA%B0%88%EB%A6%B0%20%EC%A3%BC%EC%9E%A5%EC%9D%B4%20%EC%95%84%EB%8B%8C%2C%20%EC%9D%BC%EB%B0%A9%EC%A0%81%EC%9D%B8%20%EC%A3%BC%EC%9E%A5%EC%9C%BC%EB%A1%9C%EB%8A%94%20%EC%A7%84%EC%8B%A4%EC%9D%84%20%EC%9D%B4%EA%B8%B8%20%EC%88%98%20%EC%97%86%EC%9D%84%EA%B1%B0%EB%9D%BC%20%EB%AF%BF%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%AA%A8%EB%93%A0%20%EC%97%AD%EC%82%AC%20%EC%9C%84%EC%97%90%20%ED%98%84%EC%9E%AC%EA%B0%80%20%EC%A1%B4%EC%9E%AC%20%ED%95%A9%EB%8B%88%EB%8B%A4.%20%EB%8D%94%20%EB%82%98%EC%9D%80%20%EB%AF%B8%EB%9E%98%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EC%9D%B4%20%EC%97%AD%EC%82%AC%EC%A0%81%20%EA%B0%88%EB%93%B1%EC%9D%B4%20%EB%A9%88%EC%B6%B0%EC%A7%80%EA%B8%B8%20%EB%B0%94%EB%9D%BC%EB%B4%85%EB%8B%88%EB%8B%A4.%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%EC%A3%BC%EC%84%B8%EC%9A%94%21%21english.yonhapnews.co.kr%2Fsearch1%2F2603000000.html%3Fcid%3DAEN20170807003600315%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-linkedin-icon"><i
-                                                                            class="fa fa-linkedin"></i></a><a
-                                                                        href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1601509646535166%20-%20%ED%8B%80%EB%A6%B0%20%EA%B2%83%EC%9D%80%20%EB%B0%94%EB%A1%9C%EC%9E%A1%EA%B3%A0%2C%20%EC%9E%98%EB%AA%BB%ED%95%9C%20%EA%B2%83%EC%9D%80%20%EC%9D%B8%EC%A0%95%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%B4%20%EC%97%AD%EC%82%AC%20%EC%95%84%EB%8B%90%EA%B9%8C%EC%9A%94%3F%EC%97%87%EA%B0%88%EB%A6%B0%20%EC%A3%BC%EC%9E%A5%EC%9D%B4%20%EC%95%84%EB%8B%8C%2C%20%EC%9D%BC%EB%B0%A9%EC%A0%81%EC%9D%B8%20%EC%A3%BC%EC%9E%A5%EC%9C%BC%EB%A1%9C%EB%8A%94%20%EC%A7%84%EC%8B%A4%EC%9D%84%20%EC%9D%B4%EA%B8%B8%20%EC%88%98%20%EC%97%86%EC%9D%84%EA%B1%B0%EB%9D%BC%20%EB%AF%BF%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%AA%A8%EB%93%A0%20%EC%97%AD%EC%82%AC%20%EC%9C%84%EC%97%90%20%ED%98%84%EC%9E%AC%EA%B0%80%20%EC%A1%B4%EC%9E%AC%20%ED%95%A9%EB%8B%88%EB%8B%A4.%20%EB%8D%94%20%EB%82%98%EC%9D%80%20%EB%AF%B8%EB%9E%98%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EC%9D%B4%20%EC%97%AD%EC%82%AC%EC%A0%81%20%EA%B0%88%EB%93%B1%EC%9D%B4%20%EB%A9%88%EC%B6%B0%EC%A7%80%EA%B8%B8%20%EB%B0%94%EB%9D%BC%EB%B4%85%EB%8B%88%EB%8B%A4.%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EB%A5%BC%20%EB%88%8C%EB%9F%AC%EC%A3%BC%EC%84%B8%EC%9A%94%21%21english.yonhapnews.co.kr%2Fsearch1%2F2603000000.html%3Fcid%3DAEN20170807003600315%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-email-icon"><i
-                                                                            class="fa fa-envelope"></i></a><i
-                                                                        class="fa fa-play fa-rotate-90"></i>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cff-item cff-link-item author-eastsea"
-                                                        id="cff_463713023648173_1597200770299387">
-                                                        <div class="cff-author"><a
-                                                                href="https://facebook.com/463713023648173"
-                                                                target="_blank" rel="nofollow"
-                                                                title="EastSea on Facebook">
-                                                                <div class="cff-author-text">
-                                                                    <p class="cff-page-name cff-author-date">
-                                                                        EastSea</p>
-                                                                    <p class="cff-date"> 2 months
-                                                                        ago </p>
-                                                                </div>
-                                                                <div class="cff-author-img"><img
-                                                                        src="../463713023648173/picture-type-square.jpg"
-                                                                        title="EastSea" alt="EastSea" width="40"
-                                                                        height="40"></div>
-                                                            </a></div>
-                                                        <p class="cff-post-text"><span class="cff-text"
-                                                                data-color="">일본에서
-                                                                발견된 고 지도에서 동해 끝 자락에 있는 '독도'를 대한민국의
-                                                                영토로 표기 되었있음을 확인했다고 합니다.<br> 한-일 양국의
-                                                                대학 교수님들이 공동으로 연구한 결과인데요..<br> 이번
-                                                                계기를 삼아 "동해"와
-                                                                "독도" 논쟁이 한 풀 꺾였으면 하는
-                                                                바람입니다.^^<br> <br> 자세한 내용은 아래 링크에서
-                                                                확인하세요!<br> </span><span class="cff-expand"
-                                                                style="display: inline;">... <a href="#"
-                                                                    style="color: #"><span class="cff-more">See
-                                                                        More</span><span class="cff-less">See
-                                                                        Less</span></a></span></p>
-                                                        <div class="cff-shared-link" style="border: 1px solid #; ">
-                                                            <div class="cff-text-link cff-no-image">
-                                                                <p class="cff-link-title"><a
-                                                                        href="http://koreatimes.co.kr/www/news/culture/2017/08/135_234095.html"
-                                                                        target="_blank" rel="nofollow"
-                                                                        style="color:#;">New
-                                                                        historical map found in
-                                                                        Japan marks Dokdo as Korean
-                                                                        territory</a></p>
-                                                                <p class="cff-link-caption" style="color:#;">
-                                                                    koreatimes.co.kr</p>
-                                                                <p class="cff-post-desc" style="font-size:12px; ">
-                                                                    <span>An antique map from the
-                                                                        19th century depicting the
-                                                                        Dokdo Islands as part of
-                                                                        Korean territory has been
-                                                                        discovered in Japan. Nam
-                                                                        Kwon-hee, a professor of
-                                                                        library information science
-                                                                        at Kyungpook Nationa...
-                                                                    </span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cff-post-links"><a class="cff-viewpost-facebook"
-                                                                href="https://www.facebook.com/463713023648173_1597200770299387"
-                                                                title="View on Facebook" target="_blank"
-                                                                rel="nofollow">View
-                                                                on Facebook</a>
-                                                            <div class="cff-share-container"><span
-                                                                    class="cff-dot">·</span><a class="cff-share-link"
-                                                                    href="javascript:void(0);" title="Share">Share</a>
-                                                                <p class="cff-share-tooltip"><a
-                                                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1597200770299387"
-                                                                        target="_blank" class="cff-facebook-icon"><i
-                                                                            class="fa fa-facebook-square"></i></a><a
-                                                                        href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1597200770299387"
-                                                                        target="_blank" class="cff-twitter-icon"><i
-                                                                            class="fa fa-twitter"></i></a><a
-                                                                        href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1597200770299387"
-                                                                        target="_blank" class="cff-google-icon"><i
-                                                                            class="fa fa-google-plus"></i></a><a
-                                                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1597200770299387&amp;title=%EC%9D%BC%EB%B3%B8%EC%97%90%EC%84%9C%20%EB%B0%9C%EA%B2%AC%EB%90%9C%20%EA%B3%A0%20%EC%A7%80%EB%8F%84%EC%97%90%EC%84%9C%20%EB%8F%99%ED%95%B4%20%EB%81%9D%20%EC%9E%90%EB%9D%BD%EC%97%90%20%EC%9E%88%EB%8A%94%20%27%EB%8F%85%EB%8F%84%27%EB%A5%BC%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98%20%EC%98%81%ED%86%A0%EB%A1%9C%20%ED%91%9C%EA%B8%B0%20%EB%90%98%EC%97%88%EC%9E%88%EC%9D%8C%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%96%88%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%ED%95%9C-%EC%9D%BC%20%EC%96%91%EA%B5%AD%EC%9D%98%20%EB%8C%80%ED%95%99%20%EA%B5%90%EC%88%98%EB%8B%98%EB%93%A4%EC%9D%B4%20%EA%B3%B5%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EC%97%B0%EA%B5%AC%ED%95%9C%20%EA%B2%B0%EA%B3%BC%EC%9D%B8%EB%8D%B0%EC%9A%94..%EC%9D%B4%EB%B2%88%20%EA%B3%84%EA%B8%B0%EB%A5%BC%20%EC%82%BC%EC%95%84%20%26quot%3B%EB%8F%99%ED%95%B4%26quot%3B%EC%99%80%20%26quot%3B%EB%8F%85%EB%8F%84%26quot%3B%20%EB%85%BC%EC%9F%81%EC%9D%B4%20%ED%95%9C%20%ED%92%80%20%EA%BA%BE%EC%98%80%EC%9C%BC%EB%A9%B4%20%ED%95%98%EB%8A%94%20%EB%B0%94%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.%5E%5E%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%84%B8%EC%9A%94%21koreatimes.co.kr%2Fwww%2Fnews%2Fculture%2F2017%2F08%2F135_234095.html%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-linkedin-icon"><i
-                                                                            class="fa fa-linkedin"></i></a><a
-                                                                        href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2F463713023648173_1597200770299387%20-%20%EC%9D%BC%EB%B3%B8%EC%97%90%EC%84%9C%20%EB%B0%9C%EA%B2%AC%EB%90%9C%20%EA%B3%A0%20%EC%A7%80%EB%8F%84%EC%97%90%EC%84%9C%20%EB%8F%99%ED%95%B4%20%EB%81%9D%20%EC%9E%90%EB%9D%BD%EC%97%90%20%EC%9E%88%EB%8A%94%20%27%EB%8F%85%EB%8F%84%27%EB%A5%BC%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98%20%EC%98%81%ED%86%A0%EB%A1%9C%20%ED%91%9C%EA%B8%B0%20%EB%90%98%EC%97%88%EC%9E%88%EC%9D%8C%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%96%88%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%ED%95%9C-%EC%9D%BC%20%EC%96%91%EA%B5%AD%EC%9D%98%20%EB%8C%80%ED%95%99%20%EA%B5%90%EC%88%98%EB%8B%98%EB%93%A4%EC%9D%B4%20%EA%B3%B5%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EC%97%B0%EA%B5%AC%ED%95%9C%20%EA%B2%B0%EA%B3%BC%EC%9D%B8%EB%8D%B0%EC%9A%94..%EC%9D%B4%EB%B2%88%20%EA%B3%84%EA%B8%B0%EB%A5%BC%20%EC%82%BC%EC%95%84%20%26quot%3B%EB%8F%99%ED%95%B4%26quot%3B%EC%99%80%20%26quot%3B%EB%8F%85%EB%8F%84%26quot%3B%20%EB%85%BC%EC%9F%81%EC%9D%B4%20%ED%95%9C%20%ED%92%80%20%EA%BA%BE%EC%98%80%EC%9C%BC%EB%A9%B4%20%ED%95%98%EB%8A%94%20%EB%B0%94%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.%5E%5E%EC%9E%90%EC%84%B8%ED%95%9C%20%EB%82%B4%EC%9A%A9%EC%9D%80%20%EC%95%84%EB%9E%98%20%EB%A7%81%ED%81%AC%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%84%B8%EC%9A%94%21koreatimes.co.kr%2Fwww%2Fnews%2Fculture%2F2017%2F08%2F135_234095.html%20...%20See%20MoreSee%20Less"
-                                                                        target="_blank" class="cff-email-icon"><i
-                                                                            class="fa fa-envelope"></i></a><i
-                                                                        class="fa fa-play fa-rotate-90"></i>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div id="fb-root" class=" fb_reset fb_reset">
+                                                <div
+                                                    style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                                                    <div></div>
                                                 </div>
-                                                <div class="cff-clear"></div>
+                                                <div
+                                                    style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                                                    <div></div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="kleo-gap" style="height:10px;line-height:10px;">
+                                        <div class="cff-wrapper">
+                                            <div id="cff" data-char="400" class="cff-fixed-height cff-default-styles"
+                                                style="width:100%; height:450px; padding:20px; background-color:#f7f7f7; ">
+                                                <div class="cff-item cff-link-item author-eastsea"
+                                                    id="cff_463713023648173_2241712822514842">
+                                                    <div class="cff-author">
+                                                        <div class="cff-author-text">
+                                                            <p class="cff-page-name cff-author-date"><a
+                                                                    href="https://facebook.com/463713023648173"
+                                                                    target="_blank" rel="nofollow"
+                                                                    style="margin: 0px;">EastSea</a></p>
+                                                            <p class="cff-date"> 1 week ago </p>
+                                                        </div>
+                                                        <div class="cff-author-img"><a
+                                                                href="https://facebook.com/463713023648173"
+                                                                target="_blank" rel="nofollow"><img
+                                                                    src="https://web.archive.org/web/20190126021617im_/https://graph.facebook.com/463713023648173/picture?type=square"
+                                                                    title="EastSea" alt="EastSea" width="40" height="40"
+                                                                    onerror="this.style.display='none'"></a></div>
+                                                    </div>
+                                                    <p class="cff-post-text"><span class="cff-text" data-color="">동해의
+                                                            이사부길 들어보셨나요?<br> 새천년 도로라 칭해졌던 이사부길은 한국 아름다운 길 100선에 꼽히는
+                                                            길입니다.<br> 삼척항에서 삼척해변 4.6㎞ 구불구불한 길로 천천히 드라이브를 하기에 적합한
+                                                            명소입니다.<br> 주변 명소로는 장호리 풍경과 삼척 해상케이블카가 있다고 하네요^^<br> <br>
+                                                            다가오는 봄에는 동해의 아름다움을 만나 보시는건 어떠신가요?<br> <br> 출처:<br> <a
+                                                                href="https://web.archive.org/web/20190126021617mp_/http://tripin.edaily.co.kr/%EB%8F%99%ED%95%B4%ED%99%98%EC%83%81%EC%9D%98%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C%EA%B8%B8%EC%82%BC%EC%B2%99%EC%97%AC%ED%96%89/"
+                                                                target="_blank"
+                                                                rel="nofollow">tripin.edaily.co.kr/%EB%8F%99%ED%95%B4%ED%99%98%EC%83%81%EC%9D%98%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B...</a>
+                                                        </span><span class="cff-expand">... <a href="#"
+                                                                style="color: #"><span class="cff-more">See
+                                                                    More</span><span class="cff-less">See
+                                                                    Less</span></a></span></p>
+                                                    <div class="cff-shared-link" style="border: 1px solid #; ">
+                                                        <div class="cff-text-link cff-no-image">
+                                                            <p class="cff-link-title"><a
+                                                                    href="http://tripin.edaily.co.kr/%EB%8F%99%ED%95%B4%ED%99%98%EC%83%81%EC%9D%98%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C%EA%B8%B8%EC%82%BC%EC%B2%99%EC%97%AC%ED%96%89/"
+                                                                    target="_blank" rel="nofollow" style="color:#;">동해
+                                                                    환상의 드라이브길 삼척여행</a></p>
+                                                            <p class="cff-link-caption" style="color:#;">
+                                                                tripin.edaily.co.kr</p><span class="cff-post-desc"
+                                                                style="color:#;">동해 환상의 드라이브길 이사부길은 새천년 해안유원지는 삼척항에서
+                                                                삼척해변으로 4.6km 길이로 ‘한국의 아름다운 길 100선’에 선정된 곳이다.
+                                                                &lt;center... </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cff-post-links"><a class="cff-viewpost-facebook"
+                                                            href="https://www.facebook.com/463713023648173_2241712822514842"
+                                                            title="View on Facebook" target="_blank" rel="nofollow">View
+                                                            on Facebook</a>
+                                                        <div class="cff-share-container"><span
+                                                                class="cff-dot">·</span><a class="cff-share-link"
+                                                                href="javascript:void(0);" title="Share">Share</a>
+                                                            <p class="cff-share-tooltip" style="display: none;"><a
+                                                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2241712822514842"
+                                                                    target="_blank" class="cff-facebook-icon  cff-show"><i
+                                                                        class="fa fab fa-facebook-square"
+                                                                       ></i></a><a
+                                                                    href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2241712822514842"
+                                                                    target="_blank" class="cff-twitter-icon  cff-show"><i
+                                                                        class="fa fab fa-twitter"
+                                                                       ></i></a><a
+                                                                    href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2241712822514842"
+                                                                    target="_blank" class="cff-google-icon  cff-show"><i
+                                                                        class="fa fab fa-google-plus"
+                                                                       ></i></a><a
+                                                                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2241712822514842&amp;title=%EB%8F%99%ED%95%B4%EC%9D%98%20%EC%9D%B4%EC%82%AC%EB%B6%80%EA%B8%B8%20%EB%93%A4%EC%96%B4%EB%B3%B4%EC%85%A8%EB%82%98%EC%9A%94%3F%EC%83%88%EC%B2%9C%EB%85%84%20%EB%8F%84%EB%A1%9C%EB%9D%BC%20%EC%B9%AD%ED%95%B4%EC%A1%8C%EB%8D%98%20%EC%9D%B4%EC%82%AC%EB%B6%80%EA%B8%B8%EC%9D%80%20%ED%95%9C%EA%B5%AD%20%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4%20%EA%B8%B8%20100%EC%84%A0%EC%97%90%20%EA%BC%BD%ED%9E%88%EB%8A%94%20%EA%B8%B8%EC%9E%85%EB%8B%88%EB%8B%A4.%EC%82%BC%EC%B2%99%ED%95%AD%EC%97%90%EC%84%9C%20%EC%82%BC%EC%B2%99%ED%95%B4%EB%B3%80%204.6%E3%8E%9E%20%EA%B5%AC%EB%B6%88%EA%B5%AC%EB%B6%88%ED%95%9C%20%EA%B8%B8%EB%A1%9C%20%EC%B2%9C%EC%B2%9C%ED%9E%88%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%A5%BC%20%ED%95%98%EA%B8%B0%EC%97%90%20%EC%A0%81%ED%95%A9%ED%95%9C%20%EB%AA%85%EC%86%8C%EC%9E%85%EB%8B%88%EB%8B%A4.%EC%A3%BC%EB%B3%80%20%EB%AA%85%EC%86%8C%EB%A1%9C%EB%8A%94%20%EC%9E%A5%ED%98%B8%EB%A6%AC%20%ED%92%8D%EA%B2%BD%EA%B3%BC%20%EC%82%BC%EC%B2%99%20%ED%95%B4%EC%83%81%EC%BC%80%EC%9D%B4%EB%B8%94%EC%B9%B4%EA%B0%80%20%EC%9E%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%84%A4%EC%9A%94%5E%5E%EB%8B%A4%EA%B0%80%EC%98%A4%EB%8A%94%20%EB%B4%84%EC%97%90%EB%8A%94%20%EB%8F%99%ED%95%B4%EC%9D%98%20%EC%95%84%EB%A6%84%EB%8B%A4%EC%9B%80%EC%9D%84%20%EB%A7%8C%EB%82%98%20%EB%B3%B4%EC%8B%9C%EB%8A%94%EA%B1%B4%20%EC%96%B4%EB%96%A0%EC%8B%A0%EA%B0%80%EC%9A%94%3F%EC%B6%9C%EC%B2%98%3Atripin.edaily.co.kr%2F%25EB%258F%2599%25ED%2595%25B4%25ED%2599%2598%25EC%2583%2581%25EC%259D%2598%25EB%2593%259C%25EB%259D%25BC%25EC%259D%25B4%25EB%25B...%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-linkedin-icon  cff-show"><i
+                                                                        class="fa fab fa-linkedin"
+                                                                       ></i></a><a
+                                                                    href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2241712822514842%20-%20%EB%8F%99%ED%95%B4%EC%9D%98%20%EC%9D%B4%EC%82%AC%EB%B6%80%EA%B8%B8%20%EB%93%A4%EC%96%B4%EB%B3%B4%EC%85%A8%EB%82%98%EC%9A%94%3F%EC%83%88%EC%B2%9C%EB%85%84%20%EB%8F%84%EB%A1%9C%EB%9D%BC%20%EC%B9%AD%ED%95%B4%EC%A1%8C%EB%8D%98%20%EC%9D%B4%EC%82%AC%EB%B6%80%EA%B8%B8%EC%9D%80%20%ED%95%9C%EA%B5%AD%20%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4%20%EA%B8%B8%20100%EC%84%A0%EC%97%90%20%EA%BC%BD%ED%9E%88%EB%8A%94%20%EA%B8%B8%EC%9E%85%EB%8B%88%EB%8B%A4.%EC%82%BC%EC%B2%99%ED%95%AD%EC%97%90%EC%84%9C%20%EC%82%BC%EC%B2%99%ED%95%B4%EB%B3%80%204.6%E3%8E%9E%20%EA%B5%AC%EB%B6%88%EA%B5%AC%EB%B6%88%ED%95%9C%20%EA%B8%B8%EB%A1%9C%20%EC%B2%9C%EC%B2%9C%ED%9E%88%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%A5%BC%20%ED%95%98%EA%B8%B0%EC%97%90%20%EC%A0%81%ED%95%A9%ED%95%9C%20%EB%AA%85%EC%86%8C%EC%9E%85%EB%8B%88%EB%8B%A4.%EC%A3%BC%EB%B3%80%20%EB%AA%85%EC%86%8C%EB%A1%9C%EB%8A%94%20%EC%9E%A5%ED%98%B8%EB%A6%AC%20%ED%92%8D%EA%B2%BD%EA%B3%BC%20%EC%82%BC%EC%B2%99%20%ED%95%B4%EC%83%81%EC%BC%80%EC%9D%B4%EB%B8%94%EC%B9%B4%EA%B0%80%20%EC%9E%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%84%A4%EC%9A%94%5E%5E%EB%8B%A4%EA%B0%80%EC%98%A4%EB%8A%94%20%EB%B4%84%EC%97%90%EB%8A%94%20%EB%8F%99%ED%95%B4%EC%9D%98%20%EC%95%84%EB%A6%84%EB%8B%A4%EC%9B%80%EC%9D%84%20%EB%A7%8C%EB%82%98%20%EB%B3%B4%EC%8B%9C%EB%8A%94%EA%B1%B4%20%EC%96%B4%EB%96%A0%EC%8B%A0%EA%B0%80%EC%9A%94%3F%EC%B6%9C%EC%B2%98%3Atripin.edaily.co.kr%2F%25EB%258F%2599%25ED%2595%25B4%25ED%2599%2598%25EC%2583%2581%25EC%259D%2598%25EB%2593%259C%25EB%259D%25BC%25EC%259D%25B4%25EB%25B...%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-email-icon  cff-show"><i
+                                                                        class="fa fa-envelope"
+                                                                       ></i></a><i
+                                                                    class="fa fa-play fa-rotate-90"
+                                                                   ></i></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cff-item cff-link-item author-eastsea"
+                                                    id="cff_463713023648173_2221574311195360">
+                                                    <div class="cff-author">
+                                                        <div class="cff-author-text">
+                                                            <p class="cff-page-name cff-author-date"><a
+                                                                    href="https://facebook.com/463713023648173"
+                                                                    target="_blank" rel="nofollow"
+                                                                    style="margin: 0px;">EastSea</a></p>
+                                                            <p class="cff-date"> 3 weeks ago </p>
+                                                        </div>
+                                                        <div class="cff-author-img"><a
+                                                                href="https://facebook.com/463713023648173"
+                                                                target="_blank" rel="nofollow"><img
+                                                                    src="https://web.archive.org/web/20190126021617im_/https://graph.facebook.com/463713023648173/picture?type=square"
+                                                                    title="EastSea" alt="EastSea" width="40" height="40"
+                                                                    onerror="this.style.display='none'"></a></div>
+                                                    </div>
+                                                    <p class="cff-post-text"><span class="cff-text"
+                                                            data-color="">동해지방해양수산청은 행정안전부가 주관한 2018년 국가기반체계 재난관리평가에서
+                                                            우수기관으로 선정, 행정안전부장관 표창을 받았다고 합니다.<br> <br> 국가기반 7체계 재난관리평가는
+                                                            에너지, 정보통신, 교통수송 등 국가기반시설 9개 분야 273개 기관을 대상으로 재난대응역량, 업무연속성
+                                                            관리 등 국가기반시설에 대한 재난관리체계를 평가하는데요.<br> <br> 동해해수청은 국가기반시설 위기관리
+                                                            대응체계 구축, 전담조직 운영, 기관장 업무수행도 등에서 높은평가를 받았습니다.<br> <br> 출처 :
+                                                            <a href="https://web.archive.org/web/20190126021617mp_/https://bit.ly/2Ruwxkp"
+                                                                target="_blank" rel="nofollow">bit.ly/2Ruwxkp</a>
+                                                        </span><span class="cff-expand">... <a href="#"
+                                                                style="color: #"><span class="cff-more">See
+                                                                    More</span><span class="cff-less">See
+                                                                    Less</span></a></span></p>
+                                                    <div class="cff-shared-link" style="border: 1px solid #; ">
+                                                        <div class="cff-text-link cff-no-image">
+                                                            <p class="cff-link-title"><a href="https://bit.ly/2Ruwxkp"
+                                                                    target="_blank" rel="nofollow"
+                                                                    style="color:#;">www.kwnews.co.kr</a></p>
+                                                            <p class="cff-link-caption" style="color:#;">kwnews.co.kr
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cff-post-links"><a class="cff-viewpost-facebook"
+                                                            href="https://www.facebook.com/463713023648173_2221574311195360"
+                                                            title="View on Facebook" target="_blank" rel="nofollow">View
+                                                            on Facebook</a>
+                                                        <div class="cff-share-container"><span
+                                                                class="cff-dot">·</span><a class="cff-share-link"
+                                                                href="javascript:void(0);" title="Share">Share</a>
+                                                            <p class="cff-share-tooltip" style="display: none;"><a
+                                                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221574311195360"
+                                                                    target="_blank" class="cff-facebook-icon  cff-show"><i
+                                                                        class="fa fab fa-facebook-square"
+                                                                      ></i></a><a
+                                                                    href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221574311195360"
+                                                                    target="_blank" class="cff-twitter-icon  cff-show"><i
+                                                                        class="fa fab fa-twitter"
+                                                                      ></i></a><a
+                                                                    href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221574311195360"
+                                                                    target="_blank" class="cff-google-icon  cff-show"><i
+                                                                        class="fa fab fa-google-plus"
+                                                                      ></i></a><a
+                                                                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221574311195360&amp;title=%EB%8F%99%ED%95%B4%EC%A7%80%EB%B0%A9%ED%95%B4%EC%96%91%EC%88%98%EC%82%B0%EC%B2%AD%EC%9D%80%20%ED%96%89%EC%A0%95%EC%95%88%EC%A0%84%EB%B6%80%EA%B0%80%20%EC%A3%BC%EA%B4%80%ED%95%9C%202018%EB%85%84%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%B2%B4%EA%B3%84%20%EC%9E%AC%EB%82%9C%EA%B4%80%EB%A6%AC%ED%8F%89%EA%B0%80%EC%97%90%EC%84%9C%20%EC%9A%B0%EC%88%98%EA%B8%B0%EA%B4%80%EC%9C%BC%EB%A1%9C%20%EC%84%A0%EC%A0%95%2C%20%ED%96%89%EC%A0%95%EC%95%88%EC%A0%84%EB%B6%80%EC%9E%A5%EA%B4%80%20%ED%91%9C%EC%B0%BD%EC%9D%84%20%EB%B0%9B%EC%95%98%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%207%EC%B2%B4%EA%B3%84%20%EC%9E%AC%EB%82%9C%EA%B4%80%EB%A6%AC%ED%8F%89%EA%B0%80%EB%8A%94%20%EC%97%90%EB%84%88%EC%A7%80%2C%20%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%2C%20%EA%B5%90%ED%86%B5%EC%88%98%EC%86%A1%20%EB%93%B1%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%84%A4%209%EA%B0%9C%20%EB%B6%84%EC%95%BC%20273%EA%B0%9C%20%EA%B8%B0%EA%B4%80%EC%9D%84%20%EB%8C%80%EC%83%81%EC%9C%BC%EB%A1%9C%20%EC%9E%AC%EB%82%9C%EB%8C%80%EC%9D%91%EC%97%AD%EB%9F%89%2C%20%EC%97%85%EB%AC%B4%EC%97%B0%EC%86%8D%EC%84%B1%20%EA%B4%80%EB%A6%AC%20%EB%93%B1%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%84%A4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9E%AC%EB%82%9C%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%EB%A5%BC%20%ED%8F%89%EA%B0%80%ED%95%98%EB%8A%94%EB%8D%B0%EC%9A%94.%EB%8F%99%ED%95%B4%ED%95%B4%EC%88%98%EC%B2%AD%EC%9D%80%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%84%A4%20%EC%9C%84%EA%B8%B0%EA%B4%80%EB%A6%AC%20%EB%8C%80%EC%9D%91%EC%B2%B4%EA%B3%84%20%EA%B5%AC%EC%B6%95%2C%20%EC%A0%84%EB%8B%B4%EC%A1%B0%EC%A7%81%20%EC%9A%B4%EC%98%81%2C%20%EA%B8%B0%EA%B4%80%EC%9E%A5%20%EC%97%85%EB%AC%B4%EC%88%98%ED%96%89%EB%8F%84%20%EB%93%B1%EC%97%90%EC%84%9C%20%EB%86%92%EC%9D%80%ED%8F%89%EA%B0%80%EB%A5%BC%20%EB%B0%9B%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4.%EC%B6%9C%EC%B2%98%20%3A%20bit.ly%2F2Ruwxkp%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-linkedin-icon  cff-show"><i
+                                                                        class="fa fab fa-linkedin"
+                                                                      ></i></a><a
+                                                                    href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221574311195360%20-%20%EB%8F%99%ED%95%B4%EC%A7%80%EB%B0%A9%ED%95%B4%EC%96%91%EC%88%98%EC%82%B0%EC%B2%AD%EC%9D%80%20%ED%96%89%EC%A0%95%EC%95%88%EC%A0%84%EB%B6%80%EA%B0%80%20%EC%A3%BC%EA%B4%80%ED%95%9C%202018%EB%85%84%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%B2%B4%EA%B3%84%20%EC%9E%AC%EB%82%9C%EA%B4%80%EB%A6%AC%ED%8F%89%EA%B0%80%EC%97%90%EC%84%9C%20%EC%9A%B0%EC%88%98%EA%B8%B0%EA%B4%80%EC%9C%BC%EB%A1%9C%20%EC%84%A0%EC%A0%95%2C%20%ED%96%89%EC%A0%95%EC%95%88%EC%A0%84%EB%B6%80%EC%9E%A5%EA%B4%80%20%ED%91%9C%EC%B0%BD%EC%9D%84%20%EB%B0%9B%EC%95%98%EB%8B%A4%EA%B3%A0%20%ED%95%A9%EB%8B%88%EB%8B%A4.%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%207%EC%B2%B4%EA%B3%84%20%EC%9E%AC%EB%82%9C%EA%B4%80%EB%A6%AC%ED%8F%89%EA%B0%80%EB%8A%94%20%EC%97%90%EB%84%88%EC%A7%80%2C%20%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%2C%20%EA%B5%90%ED%86%B5%EC%88%98%EC%86%A1%20%EB%93%B1%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%84%A4%209%EA%B0%9C%20%EB%B6%84%EC%95%BC%20273%EA%B0%9C%20%EA%B8%B0%EA%B4%80%EC%9D%84%20%EB%8C%80%EC%83%81%EC%9C%BC%EB%A1%9C%20%EC%9E%AC%EB%82%9C%EB%8C%80%EC%9D%91%EC%97%AD%EB%9F%89%2C%20%EC%97%85%EB%AC%B4%EC%97%B0%EC%86%8D%EC%84%B1%20%EA%B4%80%EB%A6%AC%20%EB%93%B1%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%84%A4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9E%AC%EB%82%9C%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%EB%A5%BC%20%ED%8F%89%EA%B0%80%ED%95%98%EB%8A%94%EB%8D%B0%EC%9A%94.%EB%8F%99%ED%95%B4%ED%95%B4%EC%88%98%EC%B2%AD%EC%9D%80%20%EA%B5%AD%EA%B0%80%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%84%A4%20%EC%9C%84%EA%B8%B0%EA%B4%80%EB%A6%AC%20%EB%8C%80%EC%9D%91%EC%B2%B4%EA%B3%84%20%EA%B5%AC%EC%B6%95%2C%20%EC%A0%84%EB%8B%B4%EC%A1%B0%EC%A7%81%20%EC%9A%B4%EC%98%81%2C%20%EA%B8%B0%EA%B4%80%EC%9E%A5%20%EC%97%85%EB%AC%B4%EC%88%98%ED%96%89%EB%8F%84%20%EB%93%B1%EC%97%90%EC%84%9C%20%EB%86%92%EC%9D%80%ED%8F%89%EA%B0%80%EB%A5%BC%20%EB%B0%9B%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4.%EC%B6%9C%EC%B2%98%20%3A%20bit.ly%2F2Ruwxkp%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-email-icon  cff-show"><i
+                                                                        class="fa fa-envelope"
+                                                                      ></i></a><i
+                                                                    class="fa fa-play fa-rotate-90"
+                                                                  ></i></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cff-item cff-link-item author-eastsea"
+                                                    id="cff_463713023648173_2221551317864326">
+                                                    <div class="cff-author">
+                                                        <div class="cff-author-text">
+                                                            <p class="cff-page-name cff-author-date"><a
+                                                                    href="https://facebook.com/463713023648173"
+                                                                    target="_blank" rel="nofollow"
+                                                                    style="margin: 0px;">EastSea</a></p>
+                                                            <p class="cff-date"> 3 weeks ago </p>
+                                                        </div>
+                                                        <div class="cff-author-img"><a
+                                                                href="https://facebook.com/463713023648173"
+                                                                target="_blank" rel="nofollow"><img
+                                                                    src="https://web.archive.org/web/20190126021617im_/https://graph.facebook.com/463713023648173/picture?type=square"
+                                                                    title="EastSea" alt="EastSea" width="40" height="40"
+                                                                    onerror="this.style.display='none'"></a></div>
+                                                    </div>
+                                                    <p class="cff-post-text"><span class="cff-text" data-color="">강원도
+                                                            동해시의 망상해수욕장 내 모래시장 한가운데에 설치한 이색 포토존이 관광객들의 눈길을 끌고 있다고
+                                                            하네요!<br> <br> 이 포토존은 LED 광성유 조명을 활용해 야간에도 즐길 수 있는다고 하는데요<br>
+                                                            <br> '여기 오길 잘했지?' , '스마일 망상', '망상에 사로잡히다' 등 3개의 아트네온 글씨로 꾸며져
+                                                            망상해변을 찾는 관광객들에게 인상적인 이벤트 장소로 활용되어지고 있습니다.<br> <br> 망상해수욕장에
+                                                            놀러갔을 때, 망상해수욕장을 카메라에 담을 수 있는 포토존에서 사진을 찍는것도 색다른 체험일 것
+                                                            같네요!<br> <br> 출처 : <a
+                                                                href="https://web.archive.org/web/20190126021617mp_/https://bit.ly/2GU31kj"
+                                                                target="_blank" rel="nofollow">bit.ly/2GU31kj</a>
+                                                        </span><span class="cff-expand">... <a href="#"
+                                                                style="color: #"><span class="cff-more">See
+                                                                    More</span><span class="cff-less">See
+                                                                    Less</span></a></span></p>
+                                                    <div class="cff-shared-link" style="border: 1px solid #; ">
+                                                        <div class="cff-text-link cff-no-image">
+                                                            <p class="cff-link-title"><a href="https://bit.ly/2GU31kj"
+                                                                    target="_blank" rel="nofollow" style="color:#;">“망상에
+                                                                    사로잡히다”...동해시 망상해변 이색 포토존 눈길 - 투어코리아</a></p>
+                                                            <p class="cff-link-caption" style="color:#;">tournews21.com
+                                                            </p><span class="cff-post-desc" style="color:#;">강원도 동해시가
+                                                                망상해수욕장 내 모래사장 한가운데에 설치한 이색 포토존이 관광객들의 눈길을 끌고 있다.이 포토존은
+                                                                LED 광성유 조명을 활용해 ... </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cff-post-links"><a class="cff-viewpost-facebook"
+                                                            href="https://www.facebook.com/463713023648173_2221551317864326"
+                                                            title="View on Facebook" target="_blank" rel="nofollow">View
+                                                            on Facebook</a>
+                                                        <div class="cff-share-container"><span
+                                                                class="cff-dot">·</span><a class="cff-share-link"
+                                                                href="javascript:void(0);" title="Share">Share</a>
+                                                            <p class="cff-share-tooltip" style="display: none;"><a
+                                                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221551317864326"
+                                                                    target="_blank" class="cff-facebook-icon  cff-show"><i
+                                                                        class="fa fab fa-facebook-square"
+                                                                       ></i></a><a
+                                                                    href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221551317864326"
+                                                                    target="_blank" class="cff-twitter-icon  cff-show"><i
+                                                                        class="fa fab fa-twitter"
+                                                                       ></i></a><a
+                                                                    href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221551317864326"
+                                                                    target="_blank" class="cff-google-icon  cff-show"><i
+                                                                        class="fa fab fa-google-plus"
+                                                                       ></i></a><a
+                                                                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221551317864326&amp;title=%EA%B0%95%EC%9B%90%EB%8F%84%20%EB%8F%99%ED%95%B4%EC%8B%9C%EC%9D%98%20%EB%A7%9D%EC%83%81%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EB%82%B4%20%EB%AA%A8%EB%9E%98%EC%8B%9C%EC%9E%A5%20%ED%95%9C%EA%B0%80%EC%9A%B4%EB%8D%B0%EC%97%90%20%EC%84%A4%EC%B9%98%ED%95%9C%20%EC%9D%B4%EC%83%89%20%ED%8F%AC%ED%86%A0%EC%A1%B4%EC%9D%B4%20%EA%B4%80%EA%B4%91%EA%B0%9D%EB%93%A4%EC%9D%98%20%EB%88%88%EA%B8%B8%EC%9D%84%20%EB%81%8C%EA%B3%A0%20%EC%9E%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%84%A4%EC%9A%94%21%EC%9D%B4%20%ED%8F%AC%ED%86%A0%EC%A1%B4%EC%9D%80%20LED%20%EA%B4%91%EC%84%B1%EC%9C%A0%20%EC%A1%B0%EB%AA%85%EC%9D%84%20%ED%99%9C%EC%9A%A9%ED%95%B4%20%EC%95%BC%EA%B0%84%EC%97%90%EB%8F%84%20%EC%A6%90%EA%B8%B8%20%EC%88%98%20%EC%9E%88%EB%8A%94%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%EC%9A%94%27%EC%97%AC%EA%B8%B0%20%EC%98%A4%EA%B8%B8%20%EC%9E%98%ED%96%88%EC%A7%80%3F%27%20%2C%20%27%EC%8A%A4%EB%A7%88%EC%9D%BC%20%EB%A7%9D%EC%83%81%27%2C%20%27%EB%A7%9D%EC%83%81%EC%97%90%20%EC%82%AC%EB%A1%9C%EC%9E%A1%ED%9E%88%EB%8B%A4%27%20%EB%93%B1%203%EA%B0%9C%EC%9D%98%20%EC%95%84%ED%8A%B8%EB%84%A4%EC%98%A8%20%EA%B8%80%EC%94%A8%EB%A1%9C%20%EA%BE%B8%EB%A9%B0%EC%A0%B8%20%EB%A7%9D%EC%83%81%ED%95%B4%EB%B3%80%EC%9D%84%20%EC%B0%BE%EB%8A%94%20%EA%B4%80%EA%B4%91%EA%B0%9D%EB%93%A4%EC%97%90%EA%B2%8C%20%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9E%A5%EC%86%8C%EB%A1%9C%20%ED%99%9C%EC%9A%A9%EB%90%98%EC%96%B4%EC%A7%80%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%EB%A7%9D%EC%83%81%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%EC%97%90%20%EB%86%80%EB%9F%AC%EA%B0%94%EC%9D%84%20%EB%95%8C%2C%20%EB%A7%9D%EC%83%81%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%EC%9D%84%20%EC%B9%B4%EB%A9%94%EB%9D%BC%EC%97%90%20%EB%8B%B4%EC%9D%84%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%ED%8F%AC%ED%86%A0%EC%A1%B4%EC%97%90%EC%84%9C%20%EC%82%AC%EC%A7%84%EC%9D%84%20%EC%B0%8D%EB%8A%94%EA%B2%83%EB%8F%84%20%EC%83%89%EB%8B%A4%EB%A5%B8%20%EC%B2%B4%ED%97%98%EC%9D%BC%20%EA%B2%83%20%EA%B0%99%EB%84%A4%EC%9A%94%21%EC%B6%9C%EC%B2%98%20%3A%20bit.ly%2F2GU31kj%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-linkedin-icon  cff-show"><i
+                                                                        class="fa fab fa-linkedin"
+                                                                       ></i></a><a
+                                                                    href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221551317864326%20-%20%EA%B0%95%EC%9B%90%EB%8F%84%20%EB%8F%99%ED%95%B4%EC%8B%9C%EC%9D%98%20%EB%A7%9D%EC%83%81%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EB%82%B4%20%EB%AA%A8%EB%9E%98%EC%8B%9C%EC%9E%A5%20%ED%95%9C%EA%B0%80%EC%9A%B4%EB%8D%B0%EC%97%90%20%EC%84%A4%EC%B9%98%ED%95%9C%20%EC%9D%B4%EC%83%89%20%ED%8F%AC%ED%86%A0%EC%A1%B4%EC%9D%B4%20%EA%B4%80%EA%B4%91%EA%B0%9D%EB%93%A4%EC%9D%98%20%EB%88%88%EA%B8%B8%EC%9D%84%20%EB%81%8C%EA%B3%A0%20%EC%9E%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%84%A4%EC%9A%94%21%EC%9D%B4%20%ED%8F%AC%ED%86%A0%EC%A1%B4%EC%9D%80%20LED%20%EA%B4%91%EC%84%B1%EC%9C%A0%20%EC%A1%B0%EB%AA%85%EC%9D%84%20%ED%99%9C%EC%9A%A9%ED%95%B4%20%EC%95%BC%EA%B0%84%EC%97%90%EB%8F%84%20%EC%A6%90%EA%B8%B8%20%EC%88%98%20%EC%9E%88%EB%8A%94%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%EC%9A%94%27%EC%97%AC%EA%B8%B0%20%EC%98%A4%EA%B8%B8%20%EC%9E%98%ED%96%88%EC%A7%80%3F%27%20%2C%20%27%EC%8A%A4%EB%A7%88%EC%9D%BC%20%EB%A7%9D%EC%83%81%27%2C%20%27%EB%A7%9D%EC%83%81%EC%97%90%20%EC%82%AC%EB%A1%9C%EC%9E%A1%ED%9E%88%EB%8B%A4%27%20%EB%93%B1%203%EA%B0%9C%EC%9D%98%20%EC%95%84%ED%8A%B8%EB%84%A4%EC%98%A8%20%EA%B8%80%EC%94%A8%EB%A1%9C%20%EA%BE%B8%EB%A9%B0%EC%A0%B8%20%EB%A7%9D%EC%83%81%ED%95%B4%EB%B3%80%EC%9D%84%20%EC%B0%BE%EB%8A%94%20%EA%B4%80%EA%B4%91%EA%B0%9D%EB%93%A4%EC%97%90%EA%B2%8C%20%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9E%A5%EC%86%8C%EB%A1%9C%20%ED%99%9C%EC%9A%A9%EB%90%98%EC%96%B4%EC%A7%80%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%EB%A7%9D%EC%83%81%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%EC%97%90%20%EB%86%80%EB%9F%AC%EA%B0%94%EC%9D%84%20%EB%95%8C%2C%20%EB%A7%9D%EC%83%81%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%EC%9D%84%20%EC%B9%B4%EB%A9%94%EB%9D%BC%EC%97%90%20%EB%8B%B4%EC%9D%84%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%ED%8F%AC%ED%86%A0%EC%A1%B4%EC%97%90%EC%84%9C%20%EC%82%AC%EC%A7%84%EC%9D%84%20%EC%B0%8D%EB%8A%94%EA%B2%83%EB%8F%84%20%EC%83%89%EB%8B%A4%EB%A5%B8%20%EC%B2%B4%ED%97%98%EC%9D%BC%20%EA%B2%83%20%EA%B0%99%EB%84%A4%EC%9A%94%21%EC%B6%9C%EC%B2%98%20%3A%20bit.ly%2F2GU31kj%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-email-icon  cff-show"><i
+                                                                        class="fa fa-envelope"
+                                                                       ></i></a><i
+                                                                    class="fa fa-play fa-rotate-90"
+                                                                   ></i></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cff-item cff-link-item author-eastsea"
+                                                    id="cff_463713023648173_2221452371207554">
+                                                    <div class="cff-author">
+                                                        <div class="cff-author-text">
+                                                            <p class="cff-page-name cff-author-date"><a
+                                                                    href="https://facebook.com/463713023648173"
+                                                                    target="_blank" rel="nofollow"
+                                                                    style="margin: 0px;">EastSea</a></p>
+                                                            <p class="cff-date"> 3 weeks ago </p>
+                                                        </div>
+                                                        <div class="cff-author-img"><a
+                                                                href="https://facebook.com/463713023648173"
+                                                                target="_blank" rel="nofollow"><img
+                                                                    src="https://web.archive.org/web/20190126021617im_/https://graph.facebook.com/463713023648173/picture?type=square"
+                                                                    title="EastSea" alt="EastSea" width="40" height="40"
+                                                                    onerror="this.style.display='none'"></a></div>
+                                                    </div>
+                                                    <p class="cff-post-text"><span class="cff-text" data-color="">2000년
+                                                            이후부터 자취를 감추기 시작한 '국민생선' 명태가 동해안에 다시 모습을 드러냈습니다. 2014년부터 진행된
+                                                            '명태 살리기 프로젝트'가 빛을 보고 있다는 추측인데요. 아직까지 귀환 원인에 대한 의견은 분분한
+                                                            상황이지만, 큰 걱정거리였던 수산자원 회복에 대한 기대로 온 동해가 들썩이고 있습니다. 이번에 귀환한 명태의
+                                                            정체를 밝히기 위해 현재 한해성수산자원센터에 유전자 검사가 요청된 상황이라고 하는데요, 꼭 좋은 소식이
+                                                            들려오기를 바랍니다^^<br> <a
+                                                                href="https://web.archive.org/web/20190126021617mp_/http://imnews.imbc.com/replay/2018/nwtoday/article/5080038_22669.html"
+                                                                target="_blank"
+                                                                rel="nofollow">imnews.imbc.com/replay/2018/nwtoday/article/5080038_22669.html</a>
+                                                        </span><span class="cff-expand">... <a href="#"
+                                                                style="color: #"><span class="cff-more">See
+                                                                    More</span><span class="cff-less">See
+                                                                    Less</span></a></span></p>
+                                                    <div class="cff-shared-link" style="border: 1px solid #; ">
+                                                        <div class="cff-text-link cff-no-image">
+                                                            <p class="cff-link-title"><a
+                                                                    href="http://imnews.imbc.com/replay/2018/nwtoday/article/5080038_22669.html"
+                                                                    target="_blank" rel="nofollow" style="color:#;">돌아온
+                                                                    명태로 동해 '들썩' 수산자원 기대감</a></p>
+                                                            <p class="cff-link-caption" style="color:#;">imnews.imbc.com
+                                                            </p><span class="cff-post-desc" style="color:#;">동해안에서 명태가
+                                                                자취를 감췄는데 최근 들어 고성지역에서 하루에 수천 마리씩 명태가 잡히고 있습니다. 그동안 자원
+                                                                회복을 위해 방류한 어린 명태... </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cff-post-links"><a class="cff-viewpost-facebook"
+                                                            href="https://www.facebook.com/463713023648173_2221452371207554"
+                                                            title="View on Facebook" target="_blank" rel="nofollow">View
+                                                            on Facebook</a>
+                                                        <div class="cff-share-container"><span
+                                                                class="cff-dot">·</span><a class="cff-share-link"
+                                                                href="javascript:void(0);" title="Share">Share</a>
+                                                            <p class="cff-share-tooltip" style="display: none;"><a
+                                                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221452371207554"
+                                                                    target="_blank"
+                                                                    class="cff-facebook-icon cff-show "><i
+                                                                        class="fa fab fa-facebook-square"></i></a><a
+                                                                    href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221452371207554"
+                                                                    target="_blank" class="cff-twitter-icon cff-show"><i
+                                                                        class="fa fab fa-twitter"></i></a><a
+                                                                    href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221452371207554"
+                                                                    target="_blank" class="cff-google-icon cff-show"><i
+                                                                        class="fa fab fa-google-plus"></i></a><a
+                                                                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221452371207554&amp;title=2000%EB%85%84%20%EC%9D%B4%ED%9B%84%EB%B6%80%ED%84%B0%20%EC%9E%90%EC%B7%A8%EB%A5%BC%20%EA%B0%90%EC%B6%94%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%95%9C%20%27%EA%B5%AD%EB%AF%BC%EC%83%9D%EC%84%A0%27%20%EB%AA%85%ED%83%9C%EA%B0%80%20%EB%8F%99%ED%95%B4%EC%95%88%EC%97%90%20%EB%8B%A4%EC%8B%9C%20%EB%AA%A8%EC%8A%B5%EC%9D%84%20%EB%93%9C%EB%9F%AC%EB%83%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%202014%EB%85%84%EB%B6%80%ED%84%B0%20%EC%A7%84%ED%96%89%EB%90%9C%20%27%EB%AA%85%ED%83%9C%20%EC%82%B4%EB%A6%AC%EA%B8%B0%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%27%EA%B0%80%20%EB%B9%9B%EC%9D%84%20%EB%B3%B4%EA%B3%A0%20%EC%9E%88%EB%8B%A4%EB%8A%94%20%EC%B6%94%EC%B8%A1%EC%9D%B8%EB%8D%B0%EC%9A%94.%20%EC%95%84%EC%A7%81%EA%B9%8C%EC%A7%80%20%EA%B7%80%ED%99%98%20%EC%9B%90%EC%9D%B8%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%98%EA%B2%AC%EC%9D%80%20%EB%B6%84%EB%B6%84%ED%95%9C%20%EC%83%81%ED%99%A9%EC%9D%B4%EC%A7%80%EB%A7%8C%2C%20%ED%81%B0%20%EA%B1%B1%EC%A0%95%EA%B1%B0%EB%A6%AC%EC%98%80%EB%8D%98%20%EC%88%98%EC%82%B0%EC%9E%90%EC%9B%90%20%ED%9A%8C%EB%B3%B5%EC%97%90%20%EB%8C%80%ED%95%9C%20%EA%B8%B0%EB%8C%80%EB%A1%9C%20%EC%98%A8%20%EB%8F%99%ED%95%B4%EA%B0%80%20%EB%93%A4%EC%8D%A9%EC%9D%B4%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EC%9D%B4%EB%B2%88%EC%97%90%20%EA%B7%80%ED%99%98%ED%95%9C%20%EB%AA%85%ED%83%9C%EC%9D%98%20%EC%A0%95%EC%B2%B4%EB%A5%BC%20%EB%B0%9D%ED%9E%88%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%ED%98%84%EC%9E%AC%20%ED%95%9C%ED%95%B4%EC%84%B1%EC%88%98%EC%82%B0%EC%9E%90%EC%9B%90%EC%84%BC%ED%84%B0%EC%97%90%20%EC%9C%A0%EC%A0%84%EC%9E%90%20%EA%B2%80%EC%82%AC%EA%B0%80%20%EC%9A%94%EC%B2%AD%EB%90%9C%20%EC%83%81%ED%99%A9%EC%9D%B4%EB%9D%BC%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%EC%9A%94%2C%20%EA%BC%AD%20%EC%A2%8B%EC%9D%80%20%EC%86%8C%EC%8B%9D%EC%9D%B4%20%EB%93%A4%EB%A0%A4%EC%98%A4%EA%B8%B0%EB%A5%BC%20%EB%B0%94%EB%9E%8D%EB%8B%88%EB%8B%A4%5E%5Eimnews.imbc.com%2Freplay%2F2018%2Fnwtoday%2Farticle%2F5080038_22669.html%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank"
+                                                                    class="cff-linkedin-icon cff-show"><i
+                                                                        class="fa fab fa-linkedin"></i></a><a
+                                                                    href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221452371207554%20-%202000%EB%85%84%20%EC%9D%B4%ED%9B%84%EB%B6%80%ED%84%B0%20%EC%9E%90%EC%B7%A8%EB%A5%BC%20%EA%B0%90%EC%B6%94%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%95%9C%20%27%EA%B5%AD%EB%AF%BC%EC%83%9D%EC%84%A0%27%20%EB%AA%85%ED%83%9C%EA%B0%80%20%EB%8F%99%ED%95%B4%EC%95%88%EC%97%90%20%EB%8B%A4%EC%8B%9C%20%EB%AA%A8%EC%8A%B5%EC%9D%84%20%EB%93%9C%EB%9F%AC%EB%83%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%202014%EB%85%84%EB%B6%80%ED%84%B0%20%EC%A7%84%ED%96%89%EB%90%9C%20%27%EB%AA%85%ED%83%9C%20%EC%82%B4%EB%A6%AC%EA%B8%B0%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%27%EA%B0%80%20%EB%B9%9B%EC%9D%84%20%EB%B3%B4%EA%B3%A0%20%EC%9E%88%EB%8B%A4%EB%8A%94%20%EC%B6%94%EC%B8%A1%EC%9D%B8%EB%8D%B0%EC%9A%94.%20%EC%95%84%EC%A7%81%EA%B9%8C%EC%A7%80%20%EA%B7%80%ED%99%98%20%EC%9B%90%EC%9D%B8%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%98%EA%B2%AC%EC%9D%80%20%EB%B6%84%EB%B6%84%ED%95%9C%20%EC%83%81%ED%99%A9%EC%9D%B4%EC%A7%80%EB%A7%8C%2C%20%ED%81%B0%20%EA%B1%B1%EC%A0%95%EA%B1%B0%EB%A6%AC%EC%98%80%EB%8D%98%20%EC%88%98%EC%82%B0%EC%9E%90%EC%9B%90%20%ED%9A%8C%EB%B3%B5%EC%97%90%20%EB%8C%80%ED%95%9C%20%EA%B8%B0%EB%8C%80%EB%A1%9C%20%EC%98%A8%20%EB%8F%99%ED%95%B4%EA%B0%80%20%EB%93%A4%EC%8D%A9%EC%9D%B4%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EC%9D%B4%EB%B2%88%EC%97%90%20%EA%B7%80%ED%99%98%ED%95%9C%20%EB%AA%85%ED%83%9C%EC%9D%98%20%EC%A0%95%EC%B2%B4%EB%A5%BC%20%EB%B0%9D%ED%9E%88%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%ED%98%84%EC%9E%AC%20%ED%95%9C%ED%95%B4%EC%84%B1%EC%88%98%EC%82%B0%EC%9E%90%EC%9B%90%EC%84%BC%ED%84%B0%EC%97%90%20%EC%9C%A0%EC%A0%84%EC%9E%90%20%EA%B2%80%EC%82%AC%EA%B0%80%20%EC%9A%94%EC%B2%AD%EB%90%9C%20%EC%83%81%ED%99%A9%EC%9D%B4%EB%9D%BC%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%EC%9A%94%2C%20%EA%BC%AD%20%EC%A2%8B%EC%9D%80%20%EC%86%8C%EC%8B%9D%EC%9D%B4%20%EB%93%A4%EB%A0%A4%EC%98%A4%EA%B8%B0%EB%A5%BC%20%EB%B0%94%EB%9E%8D%EB%8B%88%EB%8B%A4%5E%5Eimnews.imbc.com%2Freplay%2F2018%2Fnwtoday%2Farticle%2F5080038_22669.html%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-email-icon cff-show"><i
+                                                                        class="fa fa-envelope"></i></a><i
+                                                                    class="fa fa-play fa-rotate-90"></i></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cff-item cff-link-item author-eastsea"
+                                                    id="cff_463713023648173_2221442337875224">
+                                                    <div class="cff-author">
+                                                        <div class="cff-author-text">
+                                                            <p class="cff-page-name cff-author-date"><a
+                                                                    href="https://facebook.com/463713023648173"
+                                                                    target="_blank" rel="nofollow"
+                                                                    style="margin: 0px;">EastSea</a></p>
+                                                            <p class="cff-date"> 3 weeks ago </p>
+                                                        </div>
+                                                        <div class="cff-author-img"><a
+                                                                href="https://facebook.com/463713023648173"
+                                                                target="_blank" rel="nofollow"><img
+                                                                    src="https://web.archive.org/web/20190126021617im_/https://graph.facebook.com/463713023648173/picture?type=square"
+                                                                    title="EastSea" alt="EastSea" width="40" height="40"
+                                                                    onerror="this.style.display='none'"></a></div>
+                                                    </div>
+                                                    <p class="cff-post-text"><span class="cff-text" data-color="">2019
+                                                            기해년 새해가 밝았습니다. 새해 첫 일출은 어디에서 보셨나요? 일출 관람 명소로 유명한 동해안의 묵호항,
+                                                            한섬해변에도 2019년 첫 일출을 보기 위해 몰려든 인파로 북적였습니다. 새해 첫 일출은 오전 7시 20분
+                                                            경, 맑은 날씨 속에서 진행 되었는데요. 어느 때보다 밝고 커다랗게 떠오른 2019년 첫 태양처럼, 모든
+                                                            분들께 희망찬 한 해가 되기를 기원합니다^^<br> <a
+                                                                href="https://web.archive.org/web/20190126021617mp_/http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002500405&amp;CMPT_CD=P0010&amp;utm_source=naver&amp;utm_medium=newsearch&amp;utm_campaign=naver_news"
+                                                                target="_blank"
+                                                                rel="nofollow">www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002500405&amp;CMPT_CD=P0010&amp;utm_source=naver&amp;utm_m...</a>
+                                                        </span><span class="cff-expand">... <a href="#"
+                                                                style="color: #"><span class="cff-more">See
+                                                                    More</span><span class="cff-less">See
+                                                                    Less</span></a></span></p>
+                                                    <div class="cff-shared-link" style="border: 1px solid #; ">
+                                                        <div class="cff-text-link cff-no-image">
+                                                            <p class="cff-link-title"><a
+                                                                    href="http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002500405&amp;CMPT_CD=P0010&amp;utm_source=naver&amp;utm_medium=newsearch&amp;utm_campaign=naver_news"
+                                                                    target="_blank" rel="nofollow" style="color:#;">[사진]
+                                                                    동해 묵호항에서 바라본 새해 첫 일출</a></p>
+                                                            <p class="cff-link-caption" style="color:#;">ohmynews.com
+                                                            </p><span class="cff-post-desc" style="color:#;">기해년 새해 첫
+                                                                일출이 1일 오전 7시 40분 동해 묵호항에서도 화려하게 올랐다. 동해 지역은 추암을 비롯 망상해변,
+                                                                묵호등대마을 등이 일출명소로 꼽히... </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cff-post-links"><a class="cff-viewpost-facebook"
+                                                            href="https://www.facebook.com/463713023648173_2221442337875224"
+                                                            title="View on Facebook" target="_blank" rel="nofollow">View
+                                                            on Facebook</a>
+                                                        <div class="cff-share-container"><span
+                                                                class="cff-dot">·</span><a class="cff-share-link"
+                                                                href="javascript:void(0);" title="Share">Share</a>
+                                                            <p class="cff-share-tooltip" style="display: none;"><a
+                                                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221442337875224"
+                                                                    target="_blank"
+                                                                    class="cff-facebook-icon cff-show"><i
+                                                                        class="fa fab fa-facebook-square"
+                                                                      ></i></a><a
+                                                                    href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221442337875224"
+                                                                    target="_blank" class="cff-twitter-icon cff-show"><i
+                                                                        class="fa fab fa-twitter"></i></a><a
+                                                                    href="https://plus.google.com/share?url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221442337875224"
+                                                                    target="_blank" class="cff-google-icon cff-show"><i
+                                                                        class="fa fab fa-google-plus"></i></a><a
+                                                                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221442337875224&amp;title=2019%20%EA%B8%B0%ED%95%B4%EB%85%84%20%EC%83%88%ED%95%B4%EA%B0%80%20%EB%B0%9D%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EC%83%88%ED%95%B4%20%EC%B2%AB%20%EC%9D%BC%EC%B6%9C%EC%9D%80%20%EC%96%B4%EB%94%94%EC%97%90%EC%84%9C%20%EB%B3%B4%EC%85%A8%EB%82%98%EC%9A%94%3F%20%EC%9D%BC%EC%B6%9C%20%EA%B4%80%EB%9E%8C%20%EB%AA%85%EC%86%8C%EB%A1%9C%20%EC%9C%A0%EB%AA%85%ED%95%9C%20%EB%8F%99%ED%95%B4%EC%95%88%EC%9D%98%20%EB%AC%B5%ED%98%B8%ED%95%AD%2C%20%ED%95%9C%EC%84%AC%ED%95%B4%EB%B3%80%EC%97%90%EB%8F%84%202019%EB%85%84%20%EC%B2%AB%20%EC%9D%BC%EC%B6%9C%EC%9D%84%20%EB%B3%B4%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%EB%AA%B0%EB%A0%A4%EB%93%A0%20%EC%9D%B8%ED%8C%8C%EB%A1%9C%20%EB%B6%81%EC%A0%81%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EC%83%88%ED%95%B4%20%EC%B2%AB%20%EC%9D%BC%EC%B6%9C%EC%9D%80%20%EC%98%A4%EC%A0%84%207%EC%8B%9C%2020%EB%B6%84%20%EA%B2%BD%2C%20%EB%A7%91%EC%9D%80%20%EB%82%A0%EC%94%A8%20%EC%86%8D%EC%97%90%EC%84%9C%20%EC%A7%84%ED%96%89%20%EB%90%98%EC%97%88%EB%8A%94%EB%8D%B0%EC%9A%94.%20%EC%96%B4%EB%8A%90%20%EB%95%8C%EB%B3%B4%EB%8B%A4%20%EB%B0%9D%EA%B3%A0%20%EC%BB%A4%EB%8B%A4%EB%9E%97%EA%B2%8C%20%EB%96%A0%EC%98%A4%EB%A5%B8%202019%EB%85%84%20%EC%B2%AB%20%ED%83%9C%EC%96%91%EC%B2%98%EB%9F%BC%2C%20%EB%AA%A8%EB%93%A0%20%EB%B6%84%EB%93%A4%EA%BB%98%20%ED%9D%AC%EB%A7%9D%EC%B0%AC%20%ED%95%9C%20%ED%95%B4%EA%B0%80%20%EB%90%98%EA%B8%B0%EB%A5%BC%20%EA%B8%B0%EC%9B%90%ED%95%A9%EB%8B%88%EB%8B%A4%5E%5Ewww.ohmynews.com%2FNWS_Web%2FView%2Fat_pg.aspx%3FCNTN_CD%3DA0002500405%26amp%3BCMPT_CD%3DP0010%26amp%3Butm_source%3Dnaver%26amp%3Butm_m...%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank"
+                                                                    class="cff-linkedin-icon cff-show"><i
+                                                                        class="fa fab fa-linkedin"></i></a><a
+                                                                    href="mailto:/?subject=Facebook&amp;body=https%3A%2F%2Fwww.facebook.com%2Feastseakorea%2Fposts%2F2221442337875224%20-%202019%20%EA%B8%B0%ED%95%B4%EB%85%84%20%EC%83%88%ED%95%B4%EA%B0%80%20%EB%B0%9D%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EC%83%88%ED%95%B4%20%EC%B2%AB%20%EC%9D%BC%EC%B6%9C%EC%9D%80%20%EC%96%B4%EB%94%94%EC%97%90%EC%84%9C%20%EB%B3%B4%EC%85%A8%EB%82%98%EC%9A%94%3F%20%EC%9D%BC%EC%B6%9C%20%EA%B4%80%EB%9E%8C%20%EB%AA%85%EC%86%8C%EB%A1%9C%20%EC%9C%A0%EB%AA%85%ED%95%9C%20%EB%8F%99%ED%95%B4%EC%95%88%EC%9D%98%20%EB%AC%B5%ED%98%B8%ED%95%AD%2C%20%ED%95%9C%EC%84%AC%ED%95%B4%EB%B3%80%EC%97%90%EB%8F%84%202019%EB%85%84%20%EC%B2%AB%20%EC%9D%BC%EC%B6%9C%EC%9D%84%20%EB%B3%B4%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%EB%AA%B0%EB%A0%A4%EB%93%A0%20%EC%9D%B8%ED%8C%8C%EB%A1%9C%20%EB%B6%81%EC%A0%81%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EC%83%88%ED%95%B4%20%EC%B2%AB%20%EC%9D%BC%EC%B6%9C%EC%9D%80%20%EC%98%A4%EC%A0%84%207%EC%8B%9C%2020%EB%B6%84%20%EA%B2%BD%2C%20%EB%A7%91%EC%9D%80%20%EB%82%A0%EC%94%A8%20%EC%86%8D%EC%97%90%EC%84%9C%20%EC%A7%84%ED%96%89%20%EB%90%98%EC%97%88%EB%8A%94%EB%8D%B0%EC%9A%94.%20%EC%96%B4%EB%8A%90%20%EB%95%8C%EB%B3%B4%EB%8B%A4%20%EB%B0%9D%EA%B3%A0%20%EC%BB%A4%EB%8B%A4%EB%9E%97%EA%B2%8C%20%EB%96%A0%EC%98%A4%EB%A5%B8%202019%EB%85%84%20%EC%B2%AB%20%ED%83%9C%EC%96%91%EC%B2%98%EB%9F%BC%2C%20%EB%AA%A8%EB%93%A0%20%EB%B6%84%EB%93%A4%EA%BB%98%20%ED%9D%AC%EB%A7%9D%EC%B0%AC%20%ED%95%9C%20%ED%95%B4%EA%B0%80%20%EB%90%98%EA%B8%B0%EB%A5%BC%20%EA%B8%B0%EC%9B%90%ED%95%A9%EB%8B%88%EB%8B%A4%5E%5Ewww.ohmynews.com%2FNWS_Web%2FView%2Fat_pg.aspx%3FCNTN_CD%3DA0002500405%26amp%3BCMPT_CD%3DP0010%26amp%3Butm_source%3Dnaver%26amp%3Butm_m...%20...%20See%20MoreSee%20Less"
+                                                                    target="_blank" class="cff-email-icon cff-show"><i
+                                                                        class="fa fa-envelope"></i></a><i
+                                                                    class="fa fa-play fa-rotate-90"></i></p>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cff-clear"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1327,13 +1277,11 @@
                                                 }
                                             </style>
 
-                                            <a class="kleo-icon-anchor"
-                                                href="https://www.facebook.com/eastseakorea"
+                                            <a class="kleo-icon-anchor" href="https://www.facebook.com/eastseakorea"
                                                 target="_blank">
                                                 <i class="icon-facebook icon-2x"></i>
                                             </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <a class="kleo-icon-anchor"
-                                                href="https://twitter.com/amazingeastsea"
+                                            <a class="kleo-icon-anchor" href="https://twitter.com/amazingeastsea"
                                                 target="_blank">
                                                 <i class="icon-twitter icon-2x"></i>
                                             </a>
@@ -1342,12 +1290,12 @@
                                                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                     <i class="icon-desktop"></i>Family Site</button>
                                                 <ul class="dropdown-menu pull-right">
-                                                    <li><a href="http://www.ourdokdo.com/"
-                                                            target="_blank">Dokdo</a></li>
-                                                    <li><a href="http://www.mykoguryo.com/"
-                                                            target="_blank">Koguryo</a></li>
-                                                    <li><a href="http://www.balhaekorea.com/"
-                                                            target="_blank">Balhae</a></li>
+                                                    <li><a href="http://www.ourdokdo.com/" target="_blank">Dokdo</a>
+                                                    </li>
+                                                    <li><a href="http://www.mykoguryo.com/" target="_blank">Koguryo</a>
+                                                    </li>
+                                                    <li><a href="http://www.balhaekorea.com/" target="_blank">Balhae</a>
+                                                    </li>
                                                 </ul>
 
                                             </div>
@@ -1397,8 +1345,8 @@
 
                             <div class="col-sm-12">
                                 <p style="text-align: center;"><strong>Copyright © 2012-2015&nbsp;</strong>By <a
-                                        href="http://www.oso.co.kr/"
-                                        target="_blank">OSO</a> Co.Ltd. All right reserved</p>
+                                        href="http://www.oso.co.kr/" target="_blank">OSO</a> Co.Ltd. All right reserved
+                                </p>
                             </div>
 
                             <div class="col-sm-12">
@@ -1430,8 +1378,8 @@
 
                 </div>
 
-                <form action="http://www.eastseakorea.com/wp-login.php"
-                    id="login_form" name="login_form" method="post" class="kleo-form-signin">
+                <form action="http://www.eastseakorea.com/wp-login.php" id="login_form" name="login_form" method="post"
+                    class="kleo-form-signin">
                     <input type="hidden" id="security" name="security" value="a449b23114"><input type="hidden"
                         name="_wp_http_referer" value="/ko/%EB%8F%99%ED%95%B4-%EC%86%8C%EA%B0%9C/"> <input type="text"
                         id="username" autofocus="" required="" name="log" class="form-control" value=""
