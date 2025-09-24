@@ -7,7 +7,11 @@ const cheerio = require("cheerio");
 
 // folders list
 const folders = [
-  "car-title"
+  "bank-statement",
+  "business-bank-statement",
+  "business-registration-certificate",
+  "business-utility-bill",
+  "certificate"
 ];
 
 const urlFile = path.join(__dirname, "url.txt");
