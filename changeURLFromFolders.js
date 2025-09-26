@@ -7,11 +7,10 @@ const cheerio = require("cheerio");
 
 // folders list
 const folders = [
-  "bank-statement",
-  "business-bank-statement",
-  "business-registration-certificate",
-  "business-utility-bill",
-  "certificate"
+  "credit-card",
+  "credit-card-photolook",
+  "driving-license-photolook",
+  "driving-license",
 ];
 
 const urlFile = path.join(__dirname, "url.txt");
@@ -65,22 +64,24 @@ folders.forEach((folder) => {
 
       const $ = cheerio.load(html);
 
-      $("img[src='https://eastseakorea.com/download-20.png']").each((_, img) => {
-        const $img = $(img);
-        const $a = $img.closest("a");
+      $("img[src='https://eastseakorea.com/download-20.png']").each(
+        (_, img) => {
+          const $img = $(img);
+          const $a = $img.closest("a");
 
-        if ($a.length) {
-          const words = filenameToWords(file);
-          const matchedUrl = findMatchingUrl(words);
+          if ($a.length) {
+            const words = filenameToWords(file);
+            const matchedUrl = findMatchingUrl(words);
 
-          if (matchedUrl) {
-            $a.attr("href", matchedUrl);
-            console.log(`✅ Updated href in ${file} → ${matchedUrl}`);
-          } else {
-            console.log(`⚠️ No match for ${file}`);
+            if (matchedUrl) {
+              $a.attr("href", matchedUrl);
+              console.log(`✅ Updated href in ${file} → ${matchedUrl}`);
+            } else {
+              console.log(`⚠️ No match for ${file}`);
+            }
           }
         }
-      });
+      );
 
       fs.writeFileSync(filePath, $.html(), "utf8");
     }
