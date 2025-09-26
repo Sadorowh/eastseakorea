@@ -6,12 +6,7 @@ const path = require("path");
 const cheerio = require("cheerio");
 
 // folders list
-const folders = [
-  "credit-card",
-  "credit-card-photolook",
-  "driving-license-photolook",
-  "driving-license",
-];
+const folders = ["mortgage-statement", "passport", "passport-photolook"];
 
 const urlFile = path.join(__dirname, "url.txt");
 const urls = fs.readFileSync(urlFile, "utf8").split(/\r?\n/).filter(Boolean);
